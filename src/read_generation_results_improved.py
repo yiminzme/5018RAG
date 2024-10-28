@@ -209,7 +209,7 @@ def parse_arguments():
     parser.add_argument('--output_dir', type=str, default='data/gen_res', help='Output directory')
     parser.add_argument('--llm_id', type=str, default='meta-llama/Llama-2-7b-chat-hf', help='LLM model identifier')
     parser.add_argument('--use_test', type=str2bool, help='Use the test set')
-    parser.add_argument('--prompt_type', type=str, default='classic', help='Which type of prompt to use [classic, mixed, multi_corpus, only_query]')
+    parser.add_argument('--prompt_type', type=str, default='improved', help='Which type of prompt to use [classic, mixed, multi_corpus, only_query, improved]')
     
     parser.add_argument('--use_random', type=str2bool, help='Use random irrelevant documents')
     parser.add_argument('--use_adore', type=str2bool, help="Use the retrieved documents from ADORE")
@@ -230,8 +230,8 @@ def parse_arguments():
 
     args = parser.parse_args()
 
-    if not args.prompt_type in ['classic', 'mixed', 'multi_corpus', 'only_query']:
-        parser.error("Invalid prompt type. Must be one of ['classic', 'mixed', 'multi_corpus', 'only_query']")
+    if not args.prompt_type in ['classic', 'mixed', 'multi_corpus', 'only_query', 'improved']:
+        parser.error("Invalid prompt type. Must be one of ['classic', 'mixed', 'multi_corpus', 'only_query', 'improved]")
 
     return args
 
@@ -241,7 +241,7 @@ def main():
     retriever_str = ""
     
     prompt_type = args.prompt_type
-    if prompt_type == 'classic':
+    if prompt_type in ['classic', 'improved']:
         retriever_str = "adore/" if args.use_adore else "contriever/"
         args.num_doc = args.num_documents_in_context
         filename_prefix = get_classic_path(args)

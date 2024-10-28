@@ -20,7 +20,6 @@ SEED=10
 
 info = {
     # "data_path": 'data/10k_train_dataset.json',
-    # "data_path": 'data/100_train_dataset.json', # vinc: demo dataset
     "data_path": 'data/10_train_dataset.json', # vinc: demo dataset
     "random_results_path": "data/10k_random_results_at60.pkl",
     "adore_search_results_path": "data/adore_search_results_at200.pkl",
@@ -93,7 +92,8 @@ def initialize_dataset_and_loader(
     corpus: List[Dict], 
     full_to_subset_idx_map: Optional[Dict[int, int]], 
     search_results: List[Tuple[List[int], List[float]]], 
-    tokenizer: PreTrainedTokenizer
+    tokenizer: PreTrainedTokenizer,
+    llm: LLM = None,
 ) -> DataLoader:
     
     prompt_ds = PromptDataset(
@@ -106,6 +106,8 @@ def initialize_dataset_and_loader(
         num_documents_in_context=args.num_documents_in_context,
         gold_position=args.gold_position,
         get_documents_without_answer=args.get_documents_without_answer,
+        improve_docs=True, # vinc: use our improved method to improve documents
+        llm=llm # vinc: llm for improve_documents
     )
     prompt_dataloader = DataLoader(
         prompt_ds,
@@ -146,7 +148,7 @@ def generate_and_save(
 
     # Create the saving directory
     llm_folder = llm_id.split("/")[1] if '/' in llm_id else llm_id
-    saving_dir = f"{args.output_dir}/{llm_folder}/train/classic/{retriever_str}/{num_doc}_doc"
+    saving_dir = f"{args.output_dir}/{llm_folder}/train/improved/{retriever_str}/{num_doc}_doc"
     if not os.path.exists(saving_dir):
         os.makedirs(saving_dir)
 
@@ -196,7 +198,7 @@ def main():
 
     print("Loading prompt dataset...")
     prompt_dataloader = initialize_dataset_and_loader(
-        args, corpus, full_to_subset_idx_map, search_results, tokenizer
+        args, corpus, full_to_subset_idx_map, search_results, tokenizer, llm
     )
     print("Prompt dataset loaded")
 

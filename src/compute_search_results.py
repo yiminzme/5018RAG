@@ -22,7 +22,8 @@ SEED=10
 
 info = {
     "train": {
-        "data_path": 'data/10k_train_dataset.json',
+        # "data_path": 'data/10k_train_dataset.json',
+        "data_path": 'data/100_train_dataset.json', # vinc: demo dataset
     },
     "test": {
         "data_path": 'data/test_dataset.json',
@@ -130,7 +131,7 @@ def search_documents(
 def save_search_results(
     args: argparse.Namespace,
     search_results: List[Tuple[List[str], List[float]]], 
-        
+):
     """Save search results to a pickle file."""
     os.makedirs(args.output_dir, exist_ok=True)
     file_path = os.path.join(

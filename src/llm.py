@@ -5,6 +5,8 @@ from transformers import (
 )
 from typing import List, Tuple, Optional
 
+access_token = "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"
+
 class LLM:
     """
     A class for loading and generating text using a Language Model (LM) with support for quantization
@@ -58,7 +60,7 @@ class LLM:
         """
         Initializes the model and tokenizer with the given model ID.
         """
-        model_config = AutoConfig.from_pretrained(model_id, trust_remote_code=True)
+        model_config = AutoConfig.from_pretrained(model_id, trust_remote_code=True, token=access_token)
         model_config.max_seq_len = self.model_max_length
 
         model = AutoModelForCausalLM.from_pretrained(
@@ -68,12 +70,14 @@ class LLM:
             quantization_config=self.bnb_config,
             torch_dtype=torch.bfloat16,
             device_map='auto',
+            token=access_token
         )
         model.eval() # Set the model to evaluation mode
 
         tokenizer = AutoTokenizer.from_pretrained(
             model_id, padding_side="left", truncation_side="left",
-            model_max_length=self.model_max_length
+            model_max_length=self.model_max_length,
+            token=access_token
         )
         # Most LLMs don't have a pad token by default
         tokenizer.pad_token = tokenizer.eos_token  

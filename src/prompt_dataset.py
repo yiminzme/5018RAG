@@ -4,9 +4,11 @@ import hashlib
 from typing import List, Tuple, Dict, Any, Optional
 from torch.utils.data import Dataset
 from transformers import AutoTokenizer
+import re
 
 import normalize_text
 from normalize_answers import *
+from llm import LLM
 
 
 class QueryDataset(Dataset):
@@ -135,6 +137,9 @@ class PromptDataset(Dataset):
         gold_position: int = None,
         randomize_gold_position: bool = False,
         get_documents_without_answer: bool = False,
+        improve_docs: bool = False,
+        num_improved_docs_in_context: int = 3,
+        llm: LLM = None,
     ):
         super().__init__()
         self.corpus = corpus
@@ -148,6 +153,9 @@ class PromptDataset(Dataset):
         self.gold_position = gold_position
         self.randomize_gold_position = randomize_gold_position
         self.get_documents_without_answer = get_documents_without_answer
+        self.improve_docs = improve_docs
+        self.num_improved_docs_in_context = num_improved_docs_in_context
+        self.llm = llm
     
         
         self._validate_initialization_parameters()
@@ -211,8 +219,10 @@ class PromptDataset(Dataset):
             )
 
             # Build the prompt
-            documents_str = '\n'.join(formatted_documents)
             query = example['question']
+            if self.improve_docs: # vinc: improve the quality of the documents
+                formatted_documents = self.improve_documents(query, formatted_documents, self.num_improved_docs_in_context)
+            documents_str = '\n'.join(formatted_documents)
             if self.do_normalize_query:
                 query = normalize_text.normalize(query)
             prompt = self.build_qa_prompt(query, documents_str)
@@ -225,7 +235,7 @@ class PromptDataset(Dataset):
                 print("Skipping example {} due to prompt length.".format((idx, example_id)))
                 continue  # Skip adding this example
 
-            if len(formatted_documents) != self.num_documents_in_context:
+            if (len(formatted_documents) != self.num_documents_in_context):
                 print(f"Warning: Not enough documents for example {idx}.")
 
             # If prompt is within limit, add to preprocessed data
@@ -236,6 +246,99 @@ class PromptDataset(Dataset):
             self.gold_document_idxs.append(gold_document_idx)
             self.prompt_tokens_lengths.append(tokens_len)
 
+
+
+    ############################################
+    ################# TODO #####################
+    ############################################
+    
+    def improve_documents_bak(self, query: str, documents: List[str], top_k: int = 3) -> List[str]:
+        """
+        Return the first 4 documents from the list of documents
+        """
+        # return in revser order
+        return documents[:4][::-1]
+
+    def improve_documents(self, query: str, documents: List[str], top_k: int = 3) -> List[str]:
+        """
+        Scheme 1: sort, keep docs
+        Scheme 2: sort, reduce docs
+        
+        Scheme 1. 
+        根据查询对所有文档进行评分并重新排序，评分高的文档排在后面。
+        使用提示模板生成所有文档的相关性评分，并根据评分对文档进行排序。
+        
+        Scheme 2.
+        
+
+        Args:
+            query (str): 用于评估文档的查询。
+            documents (List[str]): 需要评估的文档列表。
+            top_k (int): Number of top relevant documents to return.
+
+        Returns:
+            按相关性排序后的所有文档列表，评分高的文档排在后面。
+        """
+        # 第1步：创建用于多个文档评分的组合提示模板。
+        document_entries = "\n\n".join([f"Document {i + 1}:\n{doc}" for i, doc in enumerate(documents)])
+        prompt_template = f"""
+        Given a query and several documents, evaluate the likelihood that each document contains a correct answer to the query. For each document, assign a probability score between 0 and 1, where 1 indicates very likely that the document contains a correct answer and 0 indicates very unlikely. Respond in JSON format as a list of objects: [{{"index": int, "score": float}}]
+
+        **Query:** "{query}"
+
+        **Documents:**
+        {document_entries}
+
+        Evaluate each document independently, considering:
+        1. How directly and completely the document addresses the query.
+        2. The relevance of the content to the question asked.
+        3. Any explicit or implicit answer within the document.
+
+        **JSON Output:**
+        """
+
+        try:
+            # 第2步：从LLM生成响应
+            response_text = self.llm.generate(prompt_template, max_new_tokens=200)[0]  # 根据需要调整最大token数
+            
+            # 第3步：提取提示后面的响应内容
+            response_content = response_text[len(prompt_template):].strip()
+            
+            # 第4步：在响应内容中定位JSON格式部分
+            json_pattern = re.compile(r'\[.*\]', re.DOTALL)  # 匹配多行格式的JSON数组
+            json_match = json_pattern.search(response_content)
+            
+            if json_match:
+                json_text = json_match.group()
+                # 解析JSON响应
+                scores = json.loads(json_text)
+                
+                # 第5步：根据评分对文档进行排序
+                scored_documents = [
+                    (documents[entry["index"] - 1], entry["score"], entry["index"] - 1) for entry in scores
+                    if 0 <= entry["score"] <= 1 and 1 <= entry["index"] <= len(documents)
+                ]
+                # 按评分升序排序，评分高的文档排在后面
+                scored_documents.sort(key=lambda x: x[1])
+                
+                # 获取排序后的文档列表
+                print(f"Sorted Documents: {[index for doc, score, index in scored_documents]}")
+                sorted_documents = [doc for doc, score, index in scored_documents]
+            else:
+                print("Warning: No valid JSON found in LLM response.")
+                sorted_documents = documents  # 备用方案：未排序，返回所有文档
+        
+        except Exception as e:
+            # 处理JSON解析错误或其他问题
+            print(f"Error in processing LLM response: {e}. Returning all documents by default.")
+            sorted_documents = documents  # 备用方案：返回所有文档
+
+        return sorted_documents
+
+    
+    ############################################
+    ############################################
+    ############################################
 
     def prepare_documents_for_prompt(
         self, 
