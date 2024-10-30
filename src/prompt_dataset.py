@@ -288,16 +288,10 @@ class PromptDataset(Dataset):
         **Documents:**
         {document_entries}
 
-        Evaluate each document independently, considering:
-        1. How directly and completely the document addresses the query.
-        2. The relevance of the content to the question asked.
-        3. Any explicit or implicit answer within the document.
-        4. The likelihood that the document is a distracting document.
-
         **JSON Output:**
         """
         
-        top_k = 2
+        top_k = 1
 
         try:
             # 第2步：从LLM生成响应
@@ -331,6 +325,7 @@ class PromptDataset(Dataset):
                 distracting_docs = [doc for doc, score, index in scored_documents if score >= 0.5]
                 improved_documents = [doc for doc, score, index in scored_documents if score < 0.5]
                 improved_documents = improved_documents[-top_k:]
+                sorted_documents = improved_documents
                 
                 # 打印被剔除的干扰文档索引和最终保留的文档
                 print(f"Removed Distracting Documents: {[index for doc, score, index in scored_documents if score >= 0.5]}")
