@@ -281,8 +281,7 @@ class PromptDataset(Dataset):
         """
         # 第1步：创建用于多个文档评分的组合提示模板。
         document_entries = "\n\n".join([f"Document {i + 1}:\n{doc}" for i, doc in enumerate(documents)])
-        prompt_template = f"""
-        Given a query and several documents, evaluate the likelihood that each document contains a correct answer to the query. For each document, assign a probability score between 0 and 1, where 1 indicates very likely that the document contains a correct answer and 0 indicates very unlikely. Respond in JSON format as a list of objects: [{{"index": int, "score": float}}]
+        prompt_template = f"""Given a query and several documents, identify the documents that are highly relevant to the query but are unlikely to contain the correct answer. For **each document**, assign a probability score between 0 and 1 (inclusive), where 1 indicates very likely that the document is a distracting document and 0 indicates very unlikely. **Provide scores for all documents and strictly adhere to the JSON format.** Respond in JSON format as a list of objects: [{{"index": int, "score": float}}]
 
         **Query:** "{query}"
 
@@ -293,9 +292,12 @@ class PromptDataset(Dataset):
         1. How directly and completely the document addresses the query.
         2. The relevance of the content to the question asked.
         3. Any explicit or implicit answer within the document.
+        4. The likelihood that the document is a distracting document.
 
         **JSON Output:**
         """
+        
+        top_k = 2
 
         try:
             # 第2步：从LLM生成响应
@@ -318,16 +320,26 @@ class PromptDataset(Dataset):
                     (documents[entry["index"] - 1], entry["score"], entry["index"] - 1) for entry in scores
                     if 0 <= entry["score"] <= 1 and 1 <= entry["index"] <= len(documents)
                 ]
-                # 按评分升序排序，评分高的文档排在后面
-                scored_documents.sort(key=lambda x: x[1])
+                # 按评分降序排序，评分高的文档排在前面
+                scored_documents.sort(key=lambda x: x[1], reverse=True)
                 
                 # 获取排序后的文档列表
                 print(f"Sorted Documents: {[index for doc, score, index in scored_documents]}")
                 sorted_documents = [doc for doc, score, index in scored_documents]
+                
+                # 剔除评分高的干扰文档
+                distracting_docs = [doc for doc, score, index in scored_documents if score >= 0.5]
+                improved_documents = [doc for doc, score, index in scored_documents if score < 0.5]
+                improved_documents = improved_documents[-top_k:]
+                
+                # 打印被剔除的干扰文档索引和最终保留的文档
+                print(f"Removed Distracting Documents: {[index for doc, score, index in scored_documents if score >= 0.5]}")
+                print(f"Final Improved Documents: {[index for doc, score, index in scored_documents if score < 0.5][-top_k:]}\n\n")
             else:
                 print("Warning: No valid JSON found in LLM response.")
+                print(response_content)
                 sorted_documents = documents  # 备用方案：未排序，返回所有文档
-        
+
         except Exception as e:
             # 处理JSON解析错误或其他问题
             print(f"Error in processing LLM response: {e}. Returning all documents by default.")
