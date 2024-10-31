@@ -20,7 +20,9 @@ SEED=10
 
 info = {
     # "data_path": 'data/10k_train_dataset.json',
-    "data_path": 'data/10_train_dataset.json', # vinc: demo dataset
+    # "data_path": 'data/200_train_dataset.json', # vinc: demo dataset
+    "data_path": 'data/154_train_dataset.json', # vinc: demo dataset
+    # "data_path": 'data/10_train_dataset.json', # vinc: demo dataset
     "random_results_path": "data/10k_random_results_at60.pkl",
     "adore_search_results_path": "data/adore_search_results_at200.pkl",
     "contriever_search_results_path": "data/contriever_search_results_at150.pkl",
@@ -41,6 +43,8 @@ def parse_arguments():
     parser.add_argument('--max_new_tokens', type=int, help='Maximum number of tokens to generate', default=15)
     parser.add_argument('--batch_size', type=int)
     parser.add_argument('--save_every', type=int, default=250)
+    
+    parser.add_argument('--num_improved_docs_in_context', type=int, help='Number of improved documents in context', default=1)
 
     args = parser.parse_args()
 
@@ -107,6 +111,7 @@ def initialize_dataset_and_loader(
         gold_position=args.gold_position,
         get_documents_without_answer=args.get_documents_without_answer,
         improve_docs=True, # vinc: use our improved method to improve documents
+        num_improved_docs_in_context = args.num_improved_docs_in_context, # vinc: number of improved documents in context
         llm=llm # vinc: llm for improve_documents
     )
     prompt_dataloader = DataLoader(

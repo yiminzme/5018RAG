@@ -7,6 +7,7 @@ import argparse
 import torch
 import pandas as pd
 from typing import List, Dict
+from sklearn.metrics import precision_score, recall_score, f1_score
 
 from utils import str2bool
 from normalize_answers import *
@@ -276,8 +277,10 @@ def main():
         df = pd.read_json('data/test_dataset.json')
     else:
         # df = pd.read_json('data/10k_train_dataset.json')
+        # df = pd.read_json('data/200_train_dataset.json') # vinc: demo dataset
+        df = pd.read_json('data/154_train_dataset.json') # vinc: demo dataset
         # df = pd.read_json('data/100_train_dataset.json') # vinc: demo dataset
-        df = pd.read_json('data/10_train_dataset.json') # vinc: demo dataset
+        # df = pd.read_json('data/10_train_dataset.json') # vinc: demo dataset
 
     if 'only_query' in directory:
         results = read_generation_results_only_query(data_path, df)
@@ -287,6 +290,19 @@ def main():
     results_df = pd.DataFrame(results)
     accuracy = round(results_df['ans_match_after_norm'].sum() / len(results_df), 4)
     print("ACCURACY: ", accuracy)
+    
+    # Compute precision, recall, and F1 score
+    true_labels = [1] * len(results_df)
+    predicted_labels = results_df['ans_match_after_norm']
+
+    precision = precision_score(true_labels, predicted_labels)
+    recall = recall_score(true_labels, predicted_labels)
+    f1 = f1_score(true_labels, predicted_labels)
+
+    print(f"Precision: {precision}")
+    print(f"Recall: {recall}")
+    print(f"F1 Score: {f1}")
+
     results_df.to_json(os.path.join(directory, f'{filename_prefix}all_extended.json'), orient='records')
 
 

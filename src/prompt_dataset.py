@@ -235,7 +235,7 @@ class PromptDataset(Dataset):
                 print("Skipping example {} due to prompt length.".format((idx, example_id)))
                 continue  # Skip adding this example
 
-            if (len(formatted_documents) != self.num_documents_in_context):
+            if (len(formatted_documents) != self.num_documents_in_context and len(formatted_documents) != self.num_improved_docs_in_context):
                 print(f"Warning: Not enough documents for example {idx}.")
 
             # If prompt is within limit, add to preprocessed data
@@ -292,7 +292,7 @@ class PromptDataset(Dataset):
         """
         
         top_k = 1
-
+        
         try:
             # 第2步：从LLM生成响应
             response_text = self.llm.generate(prompt_template, max_new_tokens=200)[0]  # 根据需要调整最大token数

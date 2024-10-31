@@ -20,8 +20,10 @@ SEED=10
 
 info = {
     # "data_path": 'data/10k_train_dataset.json',
+    # "data_path": 'data/200_train_dataset.json', # vinc: demo dataset
+    "data_path": 'data/154_train_dataset.json', # vinc: demo dataset
     # "data_path": 'data/100_train_dataset.json', # vinc: demo dataset
-    "data_path": 'data/10_train_dataset.json', # vinc: demo dataset
+    # "data_path": 'data/10_train_dataset.json', # vinc: demo dataset
     "random_results_path": "data/10k_random_results_at60.pkl",
     "adore_search_results_path": "data/adore_search_results_at200.pkl",
     "contriever_search_results_path": "data/contriever_search_results_at150.pkl",

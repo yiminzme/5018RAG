@@ -19,7 +19,10 @@ SEED=10
 info = {
     "train": {
         # "data_path": 'data/10k_train_dataset.json',
-        "data_path": 'data/100_train_dataset.json', # vinc: demo dataset
+        # "data_path": 'data/200_train_dataset.json', # vinc: demo dataset
+        "data_path": 'data/154_train_dataset.json', # vinc: demo dataset
+        # "data_path": 'data/100_train_dataset.json', # vinc: demo dataset
+        # "data_path": 'data/10_train_dataset.json', # vinc: demo dataset
     },
     "test": {
         "data_path": 'data/test_dataset.json',
