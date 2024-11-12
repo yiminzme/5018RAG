@@ -169,6 +169,7 @@
                 "--get_documents_without_answer", "True",
                 "--batch_size", "18",
                 "--save_every", "250",
+                "--filtering_threshold", "0.4",
             ],
             "justMyCode": false,
         },
@@ -231,7 +232,8 @@
                 "--use_adore", "False",
                 "--gold_position", "3",
                 "--num_documents_in_context", "7",
-                "--get_documents_without_answer", "True"
+                "--get_documents_without_answer", "True",
+                "--seed", "10",
             ],
         }
     ]

@@ -1,0 +1,967 @@
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.03s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.94s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.40s/it]
+LLM loaded
+
+ARGUMENTS:
+output_dir: data/gen_res
+llm_id: meta-llama/Llama-2-7b-chat-hf
+model_max_length: 4096
+load_full_corpus: False
+use_random: False
+use_adore: False
+gold_position: 1
+num_documents_in_context: 3
+get_documents_without_answer: True
+max_new_tokens: 15
+batch_size: 18
+save_every: 250
+filtering_threshold: 0.5
+seed: 10
+
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+Example 0
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 1
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 2
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 3
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 4
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 5
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 6
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 7
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 8
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 9
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 10
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0]
+Final Improved Documents: [1, 2]
+
+
+Example 11
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 12
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 13
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 14
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 15
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 16
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 17
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 18
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 19
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 20
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0]
+Final Improved Documents: [1, 2]
+
+
+Example 21
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 22
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 23
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: [1]
+Final Improved Documents: [2, 0]
+
+
+Example 24
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 25
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 26
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 27
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 28
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 29
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 30
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 31
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 32
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 33
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 34
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 35
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 36
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 37
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 38
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 39
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 40
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 41
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 42
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0]
+Final Improved Documents: [1, 2]
+
+
+Example 43
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 44
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 45
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 46
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 47
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 48
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 49
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 50
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 51
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 52
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 53
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 54
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 55
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 56
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 57
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 58
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 59
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 60
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 61
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 62
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 63
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 64
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 65
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 66
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 67
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 68
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 69
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 70
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 71
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 72
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 73
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 74
+Sorted Documents: [1, 0, 2]
+Removed Distracting Documents: [1, 0]
+Final Improved Documents: [2]
+
+
+Example 75
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 76
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 77
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0]
+Final Improved Documents: [1, 2]
+
+
+Example 78
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 79
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 80
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 81
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 82
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 83
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 84
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 85
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: [1]
+Final Improved Documents: [2, 0]
+
+
+Example 86
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 87
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 88
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 89
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 90
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 91
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 92
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 93
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 94
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: [1]
+Final Improved Documents: [2, 0]
+
+
+Example 95
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 96
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 97
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: [1]
+Final Improved Documents: [2, 0]
+
+
+Example 98
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 99
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 100
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 101
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 102
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 103
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 104
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 105
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 106
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 107
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 108
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 109
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 110
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 111
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 112
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 113
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 114
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 115
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 116
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 117
+Sorted Documents: [2, 0, 1]
+Removed Distracting Documents: [2, 0]
+Final Improved Documents: [1]
+
+
+Example 118
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 119
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 120
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 121
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 122
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 123
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 124
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 125
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 126
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: [1]
+Final Improved Documents: [2, 0]
+
+
+Example 127
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 128
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 129
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 130
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 131
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 132
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 133
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 134
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 135
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 136
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 137
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 138
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 139
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 140
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0, 2]
+Final Improved Documents: [1]
+
+
+Example 141
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 142
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 143
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 144
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0]
+Final Improved Documents: [1, 2]
+
+
+Example 145
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 146
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Example 147
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 148
+Sorted Documents: [0, 2, 1]
+Removed Distracting Documents: [0]
+Final Improved Documents: [2, 1]
+
+
+Example 149
+Sorted Documents: [1, 2, 0]
+Removed Distracting Documents: []
+Final Improved Documents: [1, 2, 0]
+
+
+Example 150
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 151
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0]
+Final Improved Documents: [1, 2]
+
+
+Example 152
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2]
+
+
+Example 153
+Sorted Documents: [0, 1, 2]
+Removed Distracting Documents: [0, 1]
+Final Improved Documents: [2]
+
+
+Prompt dataset loaded
+INFO:
+DATA: data/154_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 1
+NUM DOCUMENTS IN CONTEXT: 3
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 250
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:03<00:25,  3.22s/it] 22%|██▏       | 2/9 [00:07<00:25,  3.59s/it] 33%|███▎      | 3/9 [00:10<00:20,  3.36s/it] 44%|████▍     | 4/9 [00:31<00:51, 10.36s/it] 56%|█████▌    | 5/9 [00:43<00:44, 11.03s/it] 67%|██████▋   | 6/9 [01:09<00:48, 16.24s/it] 78%|███████▊  | 7/9 [01:35<00:38, 19.47s/it] 89%|████████▉ | 8/9 [02:02<00:21, 21.65s/it]Saving at 9...
+100%|██████████| 9/9 [02:14<00:00, 18.57s/it]100%|██████████| 9/9 [02:14<00:00, 14.89s/it]
+Directory:  data/gen_res/Llama-2-7b-chat-hf/train/improved/contriever/3_doc
+I'm using the following files:  ['numdoc3_gold_at1_answerless_info_9.pkl']
+ACCURACY:  0.3247
+Precision: 1.0
+Recall: 0.3246753246753247
+F1 Score: 0.49019607843137253

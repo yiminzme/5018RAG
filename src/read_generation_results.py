@@ -146,16 +146,16 @@ def load_pickle_files(directory: str, filename_prefix: str) -> pd.DataFrame:
 def save_data_to_json(data_df: pd.DataFrame, directory: str, filename_prefix: str):
     """ Saves the given DataFrame to a JSON file. """
     data_path = os.path.join(directory, f'{filename_prefix}all.json')
-    # Check if the file already exists
-    if os.path.exists(data_path):
-        overwrite = input(f"File {data_path} already exists. Overwrite? (y/n): ")
-        if overwrite.lower() != 'y':
-            print("No overwrite.")
+    # # Check if the file already exists
+    # if os.path.exists(data_path):
+    #     overwrite = input(f"File {data_path} already exists. Overwrite? (y/n): ")
+    #     if overwrite.lower() != 'y':
+    #         print("No overwrite.")
 
-            results_df = pd.read_json(f'{directory}/{filename_prefix}all_extended.json')
-            accuracy = round(results_df['ans_match_after_norm'].sum() / len(results_df), 4)
-            print("ACCURACY: ", accuracy)
-            return None
+    #         results_df = pd.read_json(f'{directory}/{filename_prefix}all_extended.json')
+    #         accuracy = round(results_df['ans_match_after_norm'].sum() / len(results_df), 4)
+    #         print("ACCURACY: ", accuracy)
+    #         return None
         
     data_df.to_json(data_path, orient='records')
     return data_path

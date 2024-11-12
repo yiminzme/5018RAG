@@ -1,0 +1,66 @@
+Loading LLM...
+urllib3.exceptions.SSLError: TLS/SSL connection has been closed (EOF) (_ssl.c:1147)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1147)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/goodh/vinc/5018RAG/src/generate_answers_llm_improved.py", line 224, in <module>
+    main()
+  File "/home/goodh/vinc/5018RAG/src/generate_answers_llm_improved.py", line 192, in main
+    llm = LLM(
+  File "/home/goodh/vinc/5018RAG/src/llm.py", line 38, in __init__
+    self.model, self.tokenizer = self._initialize_model_tokenizer(model_id)
+  File "/home/goodh/vinc/5018RAG/src/llm.py", line 63, in _initialize_model_tokenizer
+    model_config = AutoConfig.from_pretrained(model_id, trust_remote_code=True, token=access_token)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/transformers/models/auto/configuration_auto.py", line 1006, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/transformers/configuration_utils.py", line 570, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/huggingface_hub/utils/_deprecation.py", line 101, in inner_f
+    return f(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1240, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1303, in _hf_hub_download_to_cache_dir
+    (url_to_download, etag, commit_hash, expected_size, head_call_error) = _get_metadata_or_catch_error(
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1751, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1673, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 376, in _request_wrapper
+    response = _request_wrapper(
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 399, in _request_wrapper
+    response = get_session().request(method=method, url=url, **params)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/huggingface_hub/utils/_http.py", line 66, in send
+    return super().send(request, *args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1147)')))"), '(Request ID: ffc7718c-f6de-41e5-b7a1-f298f5bd1ad0)')
+Directory:  data/gen_res/Llama-2-7b-chat-hf/train/improved/contriever/3_doc
+I'm using the following files:  ['numdoc3_gold_at1_answerless_info_9.pkl']
+ACCURACY:  0.3247
+Precision: 1.0
+Recall: 0.3246753246753247
+F1 Score: 0.49019607843137253

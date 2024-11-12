@@ -1,0 +1,26 @@
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.08s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+Prompt dataset loaded
+INFO:
+DATA: data/154_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 0
+NUM DOCUMENTS IN CONTEXT: 7
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 250
+  0%|          | 0/9 [00:00<?, ?it/s]Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+ 11%|█         | 1/9 [01:45<14:04, 105.59s/it] 22%|██▏       | 2/9 [05:49<21:48, 186.94s/it] 33%|███▎      | 3/9 [09:51<21:12, 212.08s/it] 44%|████▍     | 4/9 [12:50<16:35, 199.18s/it] 56%|█████▌    | 5/9 [19:50<18:34, 278.63s/it] 67%|██████▋   | 6/9 [23:00<12:25, 248.54s/it] 78%|███████▊  | 7/9 [29:57<10:07, 303.67s/it] 89%|████████▉ | 8/9 [33:50<04:41, 281.02s/it]Saving at 9...
+100%|██████████| 9/9 [37:42<00:00, 265.78s/it]100%|██████████| 9/9 [37:42<00:00, 251.39s/it]
+Directory:  data/gen_res/Llama-2-7b-chat-hf/train/classic/contriever/7_doc
+I'm using the following files:  ['numdoc7_gold_at0_answerless_info_9.pkl']
+ACCURACY:  0.2532
+Precision: 1.0
+Recall: 0.2532467532467532
+F1 Score: 0.40414507772020725

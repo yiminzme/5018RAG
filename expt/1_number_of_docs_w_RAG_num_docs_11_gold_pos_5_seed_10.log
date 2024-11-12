@@ -1,0 +1,26 @@
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:12<00:12, 12.93s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  7.94s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.69s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+Prompt dataset loaded
+INFO:
+DATA: data/154_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 5
+NUM DOCUMENTS IN CONTEXT: 11
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 9
+SAVE EVERY: 250
+  0%|          | 0/18 [00:00<?, ?it/s]Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+  6%|▌         | 1/18 [00:31<08:59, 31.73s/it] 11%|█         | 2/18 [02:11<19:03, 71.49s/it] 17%|█▋        | 3/18 [04:18<24:16, 97.12s/it] 22%|██▏       | 4/18 [07:09<29:26, 126.15s/it] 28%|██▊       | 5/18 [09:55<30:29, 140.74s/it] 33%|███▎      | 6/18 [13:24<32:47, 163.96s/it] 39%|███▉      | 7/18 [17:16<34:05, 186.00s/it] 44%|████▍     | 8/18 [19:36<28:33, 171.36s/it] 50%|█████     | 9/18 [22:14<25:04, 167.13s/it] 56%|█████▌    | 10/18 [25:46<24:07, 180.94s/it] 61%|██████    | 11/18 [29:36<22:52, 196.09s/it] 67%|██████▋   | 12/18 [33:03<19:56, 199.47s/it] 72%|███████▏  | 13/18 [36:30<16:48, 201.75s/it] 78%|███████▊  | 14/18 [39:06<12:31, 187.95s/it] 83%|████████▎ | 15/18 [41:26<08:40, 173.48s/it] 89%|████████▉ | 16/18 [44:00<05:34, 167.41s/it] 94%|█████████▍| 17/18 [47:25<02:58, 178.81s/it]Saving at 18...
+100%|██████████| 18/18 [47:51<00:00, 132.90s/it]100%|██████████| 18/18 [47:51<00:00, 159.52s/it]
+Directory:  data/gen_res/Llama-2-7b-chat-hf/train/classic/contriever/11_doc
+I'm using the following files:  ['numdoc11_gold_at5_answerless_info_18.pkl']
+ACCURACY:  0.1753
+Precision: 1.0
+Recall: 0.17532467532467533
+F1 Score: 0.2983425414364641

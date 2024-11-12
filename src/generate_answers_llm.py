@@ -16,7 +16,7 @@ from prompt_dataset import PromptDataset
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 device = torch.device(f"cuda:0" if torch.cuda.is_available() else "cpu")
 warnings.filterwarnings('ignore')
-SEED=10
+# SEED=10
 
 info = {
     # "data_path": 'data/10k_train_dataset.json',
@@ -45,6 +45,8 @@ def parse_arguments():
     parser.add_argument('--batch_size', type=int)
     parser.add_argument('--save_every', type=int, default=250)
 
+    parser.add_argument('--seed', type=int, default=10)
+    
     args = parser.parse_args()
 
     if args.num_documents_in_context is None:
@@ -179,7 +181,7 @@ def generate_and_save(
 
 def main():
     args = parse_arguments()
-
+    seed_everything(args.seed)
     print("Loading LLM...")
     llm_id = args.llm_id
     llm = LLM(
@@ -208,5 +210,5 @@ def main():
 
 
 if __name__ == "__main__":
-    seed_everything(SEED)
+    # seed_everything(SEED)
     main()
