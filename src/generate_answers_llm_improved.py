@@ -11,6 +11,7 @@ from transformers import PreTrainedTokenizer
 from llm import LLM
 from utils import *
 from prompt_dataset import PromptDataset
+import time
 
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -19,9 +20,9 @@ warnings.filterwarnings('ignore')
 SEED=10
 
 info = {
-    # "data_path": 'data/10k_train_dataset.json',
+    "data_path": 'data/10k_train_dataset.json',
     # "data_path": 'data/200_train_dataset.json', # vinc: demo dataset
-    "data_path": 'data/154_train_dataset.json', # vinc: demo dataset
+    # "data_path": 'data/154_train_dataset.json', # vinc: demo dataset
     # "data_path": 'data/10_train_dataset.json', # vinc: demo dataset
     "random_results_path": "data/10k_random_results_at60.pkl",
     "adore_search_results_path": "data/adore_search_results_at200.pkl",
@@ -44,6 +45,8 @@ def parse_arguments():
     parser.add_argument('--batch_size', type=int)
     parser.add_argument('--save_every', type=int, default=250)
     
+    parser.add_argument('--max_dataset_size', type=int, default=-1, help='Only use first n data in given dataset, -1 = use all')
+
     parser.add_argument('--num_improved_docs_in_context', type=int, help='Number of improved documents in context', default=1)
 
     args = parser.parse_args()
@@ -112,7 +115,8 @@ def initialize_dataset_and_loader(
         get_documents_without_answer=args.get_documents_without_answer,
         improve_docs=True, # vinc: use our improved method to improve documents
         num_improved_docs_in_context = args.num_improved_docs_in_context, # vinc: number of improved documents in context
-        llm=llm # vinc: llm for improve_documents
+        llm=llm, # vinc: llm for improve_documents
+        max_dataset_size=args.max_dataset_size,
     )
     prompt_dataloader = DataLoader(
         prompt_ds,
@@ -213,5 +217,8 @@ def main():
 
 
 if __name__ == "__main__":
+    t_start = time.time()
     seed_everything(SEED)
     main()
+    t_end = time.time()
+    print('time used: ', t_end - t_start)

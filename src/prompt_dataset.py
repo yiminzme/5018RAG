@@ -25,11 +25,13 @@ class QueryDataset(Dataset):
         data_path: str, 
         model_name: str,
         do_normalize_query: bool = False,
+        max_dataset_size: int = -1,
     ):
         super().__init__()
         self.data_path = data_path
         self.model_name = model_name
         self.do_normalize_query = do_normalize_query
+        self.max_dataset_size = max_dataset_size
         self._load_data()
 
 
@@ -50,7 +52,10 @@ class QueryDataset(Dataset):
         self.questions = []
         self.example_ids = []
 
-        for example in data:
+        for idx, example in enumerate(data):
+            if self.max_dataset_size != -1 and idx >= self.max_dataset_size:
+                print('stop')
+                break
             self.example_ids.append(example['example_id'])
 
             if 'query' in example:
@@ -140,6 +145,7 @@ class PromptDataset(Dataset):
         improve_docs: bool = False,
         num_improved_docs_in_context: int = 3,
         llm: LLM = None,
+        max_dataset_size: int = -1, # johnny for size restriction
     ):
         super().__init__()
         self.corpus = corpus
@@ -156,6 +162,7 @@ class PromptDataset(Dataset):
         self.improve_docs = improve_docs
         self.num_improved_docs_in_context = num_improved_docs_in_context
         self.llm = llm
+        self.max_dataset_size = max_dataset_size
     
         
         self._validate_initialization_parameters()
@@ -210,6 +217,9 @@ class PromptDataset(Dataset):
         self.prompt_tokens_lengths = []
 
         for idx, example in enumerate(data):
+            if self.max_dataset_size != -1 and idx >= self.max_dataset_size:
+                print('stop')
+                break
             example_id = str(example['example_id'])
             gold_document_idx = str(example['idx_gold_in_corpus'])
             answers = example['answers']
