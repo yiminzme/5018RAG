@@ -14,7 +14,7 @@ from prompt_dataset import QueryDataset
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 device = torch.device(f"cuda:0" if torch.cuda.is_available() else "cpu")
 warnings.filterwarnings('ignore')
-SEED=10
+# SEED=10
 
 info = {
     "train": {
@@ -39,6 +39,8 @@ def parse_arguments():
     parser.add_argument('--max_new_tokens', type=int, help='Maximum number of tokens to generate', default=15)
     parser.add_argument('--batch_size', type=int)
     parser.add_argument('--save_every', type=int, default=250)
+    
+    parser.add_argument('--seed', type=int, default=10)
 
     args = parser.parse_args()
     args.split = "test" if args.use_test else "train"
@@ -115,6 +117,7 @@ def generate_and_save(
 
 def main():
     args = parse_arguments()
+    seed_everything(args.seed)
 
     print("Loading LLM...")
     llm_id = args.llm_id
@@ -134,5 +137,5 @@ def main():
 
 
 if __name__ == '__main__':
-    seed_everything(SEED)
+    # seed_everything(SEED)
     main()

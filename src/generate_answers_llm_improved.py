@@ -16,7 +16,7 @@ from prompt_dataset import PromptDataset
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 device = torch.device(f"cuda:0" if torch.cuda.is_available() else "cpu")
 warnings.filterwarnings('ignore')
-SEED=10
+# SEED=10
 
 info = {
     # "data_path": 'data/10k_train_dataset.json',
@@ -44,7 +44,8 @@ def parse_arguments():
     parser.add_argument('--batch_size', type=int)
     parser.add_argument('--save_every', type=int, default=250)
     
-    parser.add_argument('--num_improved_docs_in_context', type=int, help='Number of improved documents in context', default=1)
+    parser.add_argument('--filtering_threshold', type=float, help='Filtering threshold for the improved documents, the higher the threshold, the more documents will be contained', default=0.5)
+    parser.add_argument('--seed', type=int, default=10)
 
     args = parser.parse_args()
 
@@ -111,7 +112,7 @@ def initialize_dataset_and_loader(
         gold_position=args.gold_position,
         get_documents_without_answer=args.get_documents_without_answer,
         improve_docs=True, # vinc: use our improved method to improve documents
-        num_improved_docs_in_context = args.num_improved_docs_in_context, # vinc: number of improved documents in context
+        filtering_threshold = args.filtering_threshold, # vinc: improved documents filtering threshold
         llm=llm # vinc: llm for improve_documents
     )
     prompt_dataloader = DataLoader(
@@ -184,6 +185,7 @@ def generate_and_save(
 
 def main():
     args = parse_arguments()
+    seed_everything(args.seed)
 
     print("Loading LLM...")
     llm_id = args.llm_id
@@ -193,6 +195,11 @@ def main():
     )
     tokenizer = llm.tokenizer
     print("LLM loaded")
+    # print all args
+    print("\nARGUMENTS:")
+    for arg in vars(args):
+        print(f"{arg}: {getattr(args, arg)}")
+    print()
 
 
     print("Loading corpus and search results...")
@@ -213,5 +220,5 @@ def main():
 
 
 if __name__ == "__main__":
-    seed_everything(SEED)
+    # seed_everything(SEED)
     main()

@@ -138,7 +138,7 @@ class PromptDataset(Dataset):
         randomize_gold_position: bool = False,
         get_documents_without_answer: bool = False,
         improve_docs: bool = False,
-        num_improved_docs_in_context: int = 3,
+        filtering_threshold: float = 0.5,
         llm: LLM = None,
     ):
         super().__init__()
@@ -154,7 +154,7 @@ class PromptDataset(Dataset):
         self.randomize_gold_position = randomize_gold_position
         self.get_documents_without_answer = get_documents_without_answer
         self.improve_docs = improve_docs
-        self.num_improved_docs_in_context = num_improved_docs_in_context
+        self.filtering_threshold = filtering_threshold
         self.llm = llm
     
         
@@ -210,6 +210,8 @@ class PromptDataset(Dataset):
         self.prompt_tokens_lengths = []
 
         for idx, example in enumerate(data):
+            if self.improve_docs:
+                print(f"Example {idx}") 
             example_id = str(example['example_id'])
             gold_document_idx = str(example['idx_gold_in_corpus'])
             answers = example['answers']
@@ -221,7 +223,7 @@ class PromptDataset(Dataset):
             # Build the prompt
             query = example['question']
             if self.improve_docs: # vinc: improve the quality of the documents
-                formatted_documents = self.improve_documents(query, formatted_documents, self.num_improved_docs_in_context)
+                formatted_documents = self.improve_documents(query, formatted_documents, self.filtering_threshold)
             documents_str = '\n'.join(formatted_documents)
             if self.do_normalize_query:
                 query = normalize_text.normalize(query)
@@ -234,9 +236,6 @@ class PromptDataset(Dataset):
                 self.excluded_samples_ids.append((idx, example_id))
                 print("Skipping example {} due to prompt length.".format((idx, example_id)))
                 continue  # Skip adding this example
-
-            if (len(formatted_documents) != self.num_documents_in_context and len(formatted_documents) != self.num_improved_docs_in_context):
-                print(f"Warning: Not enough documents for example {idx}.")
 
             # If prompt is within limit, add to preprocessed data
             self.preprocessed_data.append((formatted_documents, list(document_indices)))
@@ -259,7 +258,7 @@ class PromptDataset(Dataset):
         # return in revser order
         return documents[:4][::-1]
 
-    def improve_documents(self, query: str, documents: List[str], top_k: int = 3) -> List[str]:
+    def improve_documents(self, query: str, documents: List[str], filtering_threshold: float) -> List[str]:
         """
         Scheme 1: sort, keep docs
         Scheme 2: sort, reduce docs
@@ -291,11 +290,13 @@ class PromptDataset(Dataset):
         **JSON Output:**
         """
         
-        top_k = 1
+        # top_k = 1
+        threshold = filtering_threshold
+        num_docs = len(documents)
         
         try:
             # 第2步：从LLM生成响应
-            response_text = self.llm.generate(prompt_template, max_new_tokens=200)[0]  # 根据需要调整最大token数
+            response_text = self.llm.generate(prompt_template, max_new_tokens=200 if num_docs <= 8 else num_docs*25+40)[0]  # 根据需要调整最大token数
             
             # 第3步：提取提示后面的响应内容
             response_content = response_text[len(prompt_template):].strip()
@@ -314,22 +315,28 @@ class PromptDataset(Dataset):
                     (documents[entry["index"] - 1], entry["score"], entry["index"] - 1) for entry in scores
                     if 0 <= entry["score"] <= 1 and 1 <= entry["index"] <= len(documents)
                 ]
+                # 没有被评分的文档也插入scored_documents中，分数设为threshold-0.01
+                for i in range(len(documents)):
+                    if i+1 not in [entry["index"] for entry in scores]:
+                        scored_documents.append((documents[i], threshold-0.01, i))
+                
                 # 按评分降序排序，评分高的文档排在前面
-                scored_documents.sort(key=lambda x: x[1], reverse=True)
+                scored_documents.sort(key=lambda x: x[1], reverse=True)                
                 
                 # 获取排序后的文档列表
                 print(f"Sorted Documents: {[index for doc, score, index in scored_documents]}")
                 sorted_documents = [doc for doc, score, index in scored_documents]
                 
                 # 剔除评分高的干扰文档
-                distracting_docs = [doc for doc, score, index in scored_documents if score >= 0.5]
-                improved_documents = [doc for doc, score, index in scored_documents if score < 0.5]
-                improved_documents = improved_documents[-top_k:]
+                distracting_docs = [doc for doc, score, index in scored_documents if score >= threshold]
+                improved_documents = [doc for doc, score, index in scored_documents if score < threshold]
+                # improved_documents = improved_documents[-top_k:]
                 sorted_documents = improved_documents
                 
                 # 打印被剔除的干扰文档索引和最终保留的文档
-                print(f"Removed Distracting Documents: {[index for doc, score, index in scored_documents if score >= 0.5]}")
-                print(f"Final Improved Documents: {[index for doc, score, index in scored_documents if score < 0.5][-top_k:]}\n\n")
+                print(f"Removed Distracting Documents: {[index for doc, score, index in scored_documents if score >= threshold]}")
+                # print(f"Final Improved Documents: {[index for doc, score, index in scored_documents if score < threshold][-top_k:]}\n\n")
+                print(f"Final Improved Documents: {[index for doc, score, index in scored_documents if score < threshold]}\n\n")
             else:
                 print("Warning: No valid JSON found in LLM response.")
                 print(response_content)
@@ -342,7 +349,7 @@ class PromptDataset(Dataset):
 
         return sorted_documents
 
-    
+
     ############################################
     ############################################
     ############################################
