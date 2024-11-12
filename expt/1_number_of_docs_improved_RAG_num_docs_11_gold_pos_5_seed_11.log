@@ -1,0 +1,3626 @@
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.66s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.15s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.53s/it]
+LLM loaded
+
+ARGUMENTS:
+output_dir: data/gen_res
+llm_id: meta-llama/Llama-2-7b-chat-hf
+model_max_length: 4096
+load_full_corpus: False
+use_random: False
+use_adore: False
+gold_position: 5
+num_documents_in_context: 11
+get_documents_without_answer: True
+max_new_tokens: 15
+batch_size: 18
+save_every: 250
+filtering_threshold: 0.5
+seed: 11
+
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+Example 0
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+Warning: No valid JSON found in LLM response.
+{
+            "index": 1,
+            "score": 0.7
+         },
+         {
+            "index": 2,
+            "score": 0.3
+         },
+         {
+            "index": 3,
+            "score": 0.5
+         },
+         {
+            "index": 4,
+            "score": 0.1
+         },
+         {
+            "index": 5,
+            "score": 0.9
+         },
+         {
+            "index": 6,
+            "score": 0.8
+         },
+         {
+            "index": 7,
+            "score": 0.4
+         },
+         {
+            "index": 8,
+            "score": 0.6
+         },
+         {
+            "index": 9,
+            "score": 0
+Example 1
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 2
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 3
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 4
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.2
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.4
+            },
+            {
+                "index": 6,
+                "score": 0.5
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.7
+            },
+            {
+                "index": 9,
+                "score
+Example 5
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 6
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.2
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.1
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 7
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 8
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.2
+            },
+            {
+                "index": 4,
+                "score": 0.5
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.4
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.3
+            },
+            {
+                "index": 9,
+                "score
+Example 9
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.1
+            },
+            {
+                "index": 4,
+                "score": 0.9
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 10
+Warning: No valid JSON found in LLM response.
+{
+            "index": 1,
+            "score": 0.7
+         },
+         {
+            "index": 2,
+            "score": 0.3
+         },
+         {
+            "index": 3,
+            "score": 0.5
+         },
+         {
+            "index": 4,
+            "score": 0.2
+         },
+         {
+            "index": 5,
+            "score": 0.4
+         },
+         {
+            "index": 6,
+            "score": 0.6
+         },
+         {
+            "index": 7,
+            "score": 0.1
+         },
+         {
+            "index": 8,
+            "score": 0.8
+         },
+         {
+            "index": 9,
+            "score": 0
+Example 11
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.4
+            },
+            {
+                "index": 4,
+                "score": 0.6
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.2
+            },
+            {
+                "index": 8,
+                "score": 0.9
+            },
+            {
+                "index": 9,
+                "score
+Example 12
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.8
+            },
+            {
+                "index": 4,
+                "score": 0.4
+            },
+            {
+                "index": 5,
+                "score": 0.6
+            },
+            {
+                "index": 6,
+                "score": 0.9
+            },
+            {
+                "index": 7,
+                "score": 0.1
+            },
+            {
+                "index": 8,
+                "score": 0.5
+            },
+            {
+                "index": 9,
+                "score
+Example 13
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.2
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.1
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 14
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.2
+            },
+            {
+                "index": 5,
+                "score": 0.4
+            },
+            {
+                "index": 6,
+                "score": 0.1
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.3
+            },
+            {
+                "index": 9,
+                "score
+Example 15
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.4
+            },
+            {
+                "index": 4,
+                "score": 0.6
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.9
+            },
+            {
+                "index": 7,
+                "score": 0.5
+            },
+            {
+                "index": 8,
+                "score": 0.2
+            },
+            {
+                "index": 9,
+                "score
+Example 16
+Sorted Documents: [4, 6, 0, 8, 2, 10, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2, 10]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 17
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.3
+            },
+            {
+                "index": 9,
+                "score
+Example 18
+Sorted Documents: [0, 2, 6, 1, 3, 4, 5, 7, 8, 9, 10]
+Removed Distracting Documents: [0, 2, 6]
+Final Improved Documents: [1, 3, 4, 5, 7, 8, 9, 10]
+
+
+Example 19
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 20
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 21
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 22
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.3
+            },
+            {
+                "index": 9,
+                "score
+Example 23
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.2
+            },
+            {
+                "index": 4,
+                "score": 0.5
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.1
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 24
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.2
+            },
+            {
+                "index": 5,
+                "score": 0.4
+            },
+            {
+                "index": 6,
+                "score": 0.6
+            },
+            {
+                "index": 7,
+                "score": 0.1
+            },
+            {
+                "index": 8,
+                "score": 0.8
+            },
+            {
+                "index": 9,
+                "score
+Example 25
+Warning: No valid JSON found in LLM response.
+{
+            "index": 1,
+            "score": 0.7
+         },
+         {
+            "index": 2,
+            "score": 0.3
+         },
+         {
+            "index": 3,
+            "score": 0.5
+         },
+         {
+            "index": 4,
+            "score": 0.1
+         },
+         {
+            "index": 5,
+            "score": 0.8
+         },
+         {
+            "index": 6,
+            "score": 0.4
+         },
+         {
+            "index": 7,
+            "score": 0.6
+         },
+         {
+            "index": 8,
+            "score": 0.2
+         },
+         {
+            "index": 9,
+            "score": 0
+Example 26
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 27
+Warning: No valid JSON found in LLM response.
+{
+            "index": 1,
+            "score": 0.7
+         },
+         {
+            "index": 2,
+            "score": 0.3
+         },
+         {
+            "index": 3,
+            "score": 0.5
+         },
+         {
+            "index": 4,
+            "score": 0.1
+         },
+         {
+            "index": 5,
+            "score": 0.9
+         },
+         {
+            "index": 6,
+            "score": 0.2
+         },
+         {
+            "index": 7,
+            "score": 0.8
+         },
+         {
+            "index": 8,
+            "score": 0.4
+         },
+         {
+            "index": 9,
+            "score": 0
+Example 28
+Warning: No valid JSON found in LLM response.
+{
+            "document_1": 0.7,
+            "document_2": 0.3,
+            "document_3": 0.5,
+            "document_4": 0.2,
+            "document_5": 0.4,
+            "document_6": 0.1,
+            "document_7": 0.8,
+            "document_8": 0.6,
+            "document_9": 0.9,
+            "document_10": 0.3,
+            "document_11": 0.4
+         }
+
+Explanation:
+
+* Each document is assigned a score between 0 and 1, indicating how likely it is to contain distracting information related to the query. A score of 0 indicates very likely that the document contains distracting information, while a score of 1 indicates very
+Example 29
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.2
+            },
+            {
+                "index": 4,
+                "score": 0.8
+            },
+            {
+                "index": 5,
+                "score": 0.4
+            },
+            {
+                "index": 6,
+                "score": 0.6
+            },
+            {
+                "index": 7,
+                "score": 0.5
+            },
+            {
+                "index": 8,
+                "score": 0.9
+            },
+            {
+                "index": 9,
+                "score
+Example 30
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.4
+            },
+            {
+                "index": 3,
+                "score": 0.3
+            },
+            {
+                "index": 4,
+                "score": 0.6
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.4
+            },
+            {
+                "index": 7,
+                "score": 0.2
+            },
+            {
+                "index": 8,
+                "score": 0.1
+            },
+            {
+                "index": 9,
+                "score
+Example 31
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.2
+            },
+            {
+                "index": 4,
+                "score": 0.5
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.1
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 32
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.4
+            },
+            {
+                "index": 4,
+                "score": 0.6
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.2
+            },
+            {
+                "index": 8,
+                "score": 0.9
+            },
+            {
+                "index": 9,
+                "score
+Example 33
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.2
+            },
+            {
+                "index": 5,
+                "score": 0.4
+            },
+            {
+                "index": 6,
+                "score": 0.1
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.3
+            },
+            {
+                "index": 9,
+                "score
+Example 34
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.2
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 35
+Sorted Documents: [5, 8, 2, 9, 6, 1, 3, 4, 7, 10, 0]
+Removed Distracting Documents: [5, 8, 2, 9, 6]
+Final Improved Documents: [1, 3, 4, 7, 10, 0]
+
+
+Example 36
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.9
+            },
+            {
+                "index": 2,
+                "score": 0.8
+            },
+            {
+                "index": 3,
+                "score": 0.7
+            },
+            {
+                "index": 4,
+                "score": 0.6
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.4
+            },
+            {
+                "index": 7,
+                "score": 0.3
+            },
+            {
+                "index": 8,
+                "score": 0.2
+            },
+            {
+                "index": 9,
+                "score
+Example 37
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 0,
+                "score": 0.7
+            },
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.5
+            },
+            {
+                "index": 3,
+                "score": 0.1
+            },
+            {
+                "index": 4,
+                "score": 0.9
+            },
+            {
+                "index": 5,
+                "score": 0.2
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score
+Example 38
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 39
+Sorted Documents: [8, 2, 10, 1, 3, 4, 5, 7, 9, 0, 6]
+Removed Distracting Documents: [8, 2, 10]
+Final Improved Documents: [1, 3, 4, 5, 7, 9, 0, 6]
+
+
+Example 40
+Sorted Documents: [4, 6, 0, 8, 2, 10, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [10, 7, 1, 9, 5, 3]
+
+
+Example 41
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 42
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 43
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 44
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.9
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 45
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.2
+            },
+            {
+                "index": 4,
+                "score": 0.5
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.1
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 46
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.4
+            },
+            {
+                "index": 4,
+                "score": 0.6
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.2
+            },
+            {
+                "index": 8,
+                "score": 0.9
+            },
+            {
+                "index": 9,
+                "score
+Example 47
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.1
+            },
+            {
+                "index": 4,
+                "score": 0.9
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.7
+            },
+            {
+                "index": 7,
+                "score": 0.3
+            },
+            {
+                "index": 8,
+                "score": 0.9
+            },
+            {
+                "index": 9,
+                "score
+Example 48
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 49
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.7
+            },
+            {
+                "index": 4,
+                "score": 0.2
+            },
+            {
+                "index": 6,
+                "score": 0.1
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.3
+            },
+            {
+                "index": 9,
+                "score": 0.5
+            },
+            {
+                "index": 10,
+                "score": 0.1
+            },
+            {
+                "index": 11,
+Example 50
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.3
+            },
+            {
+                "index": 9,
+                "score
+Example 51
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 52
+Sorted Documents: [4, 5, 0, 7, 2, 10, 6, 1, 9, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2, 10]
+Final Improved Documents: [6, 1, 9, 8, 3]
+
+
+Example 53
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 12546099,
+                "score": 0.7
+            },
+            {
+                "index": 12546100,
+                "score": 0.3
+            },
+            {
+                "index": 12546101,
+                "score": 0.5
+            },
+            {
+                "index": 12546102,
+                "score": 0.1
+            },
+            {
+                "index": 12546103,
+                "score": 0.2
+            },
+            {
+                "index": 12546104,
+                "score": 0.4
+            },
+            {
+                "index": 12546105,
+Example 54
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.4
+            },
+            {
+                "index": 4,
+                "score": 0.6
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.2
+            },
+            {
+                "index": 8,
+                "score": 0.9
+            },
+            {
+                "index": 9,
+                "score
+Example 55
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.2
+            },
+            {
+                "index": 5,
+                "score": 0.1
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 56
+Warning: No valid JSON found in LLM response.
+{
+            "index": 1,
+            "score": 0.7
+         },
+         {
+            "index": 2,
+            "score": 0.3
+         },
+         {
+            "index": 3,
+            "score": 0.5
+         },
+         {
+            "index": 4,
+            "score": 0.2
+         },
+         {
+            "index": 5,
+            "score": 0.8
+         },
+         {
+            "index": 6,
+            "score": 0.1
+         },
+         {
+            "index": 7,
+            "score": 0.9
+         },
+         {
+            "index": 8,
+            "score": 0.5
+         },
+         {
+            "index": 9,
+            "score": 0
+Example 57
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 58
+Sorted Documents: [4, 6, 0, 8, 2, 10, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2, 10]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 59
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.4
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.2
+            },
+            {
+                "index": 9,
+                "score
+Example 60
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 61
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 62
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 63
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.2
+            },
+            {
+                "index": 4,
+                "score": 0.5
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.1
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 64
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.2
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.4
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.1
+            },
+            {
+                "index": 9,
+                "score
+Example 65
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.3
+            },
+            {
+                "index": 9,
+                "score
+Example 66
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.9
+            },
+            {
+                "index": 4,
+                "score": 0.5
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.4
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.3
+            },
+            {
+                "index": 9,
+                "score
+Example 67
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.4
+            },
+            {
+                "index": 4,
+                "score": 0.6
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.9
+            },
+            {
+                "index": 8,
+                "score": 0.7
+            },
+            {
+                "index": 9,
+                "score
+Example 68
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 69
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.5
+            },
+            {
+                "index": 7,
+                "score": 0.1
+            },
+            {
+                "index": 8,
+                "score": 0.7
+            },
+            {
+                "index": 9,
+                "score
+Example 70
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.2
+            },
+            {
+                "index": 5,
+                "score": 0.4
+            },
+            {
+                "index": 6,
+                "score": 0.6
+            },
+            {
+                "index": 7,
+                "score": 0.1
+            },
+            {
+                "index": 8,
+                "score": 0.8
+            },
+            {
+                "index": 9,
+                "score
+Example 71
+Sorted Documents: [0, 1, 4, 5, 2, 9, 3, 8, 6, 10, 7]
+Removed Distracting Documents: [0]
+Final Improved Documents: [1, 4, 5, 2, 9, 3, 8, 6, 10, 7]
+
+
+Example 72
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 73
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.3
+            },
+            {
+                "index": 9,
+                "score
+Example 74
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.4
+            },
+            {
+                "index": 4,
+                "score": 0.6
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.9
+            },
+            {
+                "index": 7,
+                "score": 0.5
+            },
+            {
+                "index": 8,
+                "score": 0.7
+            },
+            {
+                "index": 9,
+                "score
+Example 75
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.9
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.2
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 76
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.9
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.2
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 77
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.4
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.2
+            },
+            {
+                "index": 9,
+                "score
+Example 78
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.4
+            },
+            {
+                "index": 4,
+                "score": 0.6
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.1
+            },
+            {
+                "index": 8,
+                "score": 0.8
+            },
+            {
+                "index": 9,
+                "score
+Example 79
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.2
+            },
+            {
+                "index": 4,
+                "score": 0.5
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.1
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 80
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 81
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.2
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.1
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 82
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.4
+            },
+            {
+                "index": 9,
+                "score
+Example 83
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 84
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.4
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.2
+            },
+            {
+                "index": 9,
+                "score
+Example 85
+Warning: No valid JSON found in LLM response.
+{
+            "document_1": 0.7,
+            "document_2": 0.3,
+            "document_3": 0.5,
+            "document_4": 0.2,
+            "document_5": 0.8,
+            "document_6": 0.4,
+            "document_7": 0.6,
+            "document_8": 0.1,
+            "document_9": 0.9,
+            "document_10": 0.5,
+            "document_11": 0.9
+         }
+
+Explanation:
+
+* Document 1 is likely to be a distracting document for the query "what is the line in the middle of a time zone that in theory determines the time of that zone". It contains information on time zones and their boundaries, but does not directly address the
+Example 86
+Sorted Documents: [8, 7, 0, 9, 5, 1, 3, 4, 6, 10, 2]
+Removed Distracting Documents: [8, 7, 0, 9, 5]
+Final Improved Documents: [1, 3, 4, 6, 10, 2]
+
+
+Example 87
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.2
+            },
+            {
+                "index": 5,
+                "score": 0.4
+            },
+            {
+                "index": 6,
+                "score": 0.6
+            },
+            {
+                "index": 7,
+                "score": 0.1
+            },
+            {
+                "index": 8,
+                "score": 0.8
+            },
+            {
+                "index": 9,
+                "score
+Example 88
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.4
+            },
+            {
+                "index": 4,
+                "score": 0.6
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.2
+            },
+            {
+                "index": 8,
+                "score": 0.9
+            },
+            {
+                "index": 9,
+                "score
+Example 89
+Warning: No valid JSON found in LLM response.
+{
+            "index": 1,
+            "score": 0.7
+         },
+         {
+            "index": 2,
+            "score": 0.3
+         },
+         {
+            "index": 3,
+            "score": 0.5
+         },
+         {
+            "index": 4,
+            "score": 0.1
+         },
+         {
+            "index": 5,
+            "score": 0.9
+         },
+         {
+            "index": 6,
+            "score": 0.8
+         },
+         {
+            "index": 7,
+            "score": 0.4
+         },
+         {
+            "index": 8,
+            "score": 0.6
+         },
+         {
+            "index": 9,
+            "score": 0
+Example 90
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.5
+            },
+            {
+                "index": 7,
+                "score": 0.3
+            },
+            {
+                "index": 8,
+                "score": 0.7
+            },
+            {
+                "index": 9,
+                "score
+Example 91
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.4
+            },
+            {
+                "index": 4,
+                "score": 0.6
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.8
+            },
+            {
+                "index": 8,
+                "score": 0.3
+            },
+            {
+                "index": 9,
+                "score
+Example 92
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.4
+            },
+            {
+                "index": 4,
+                "score": 0.6
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.2
+            },
+            {
+                "index": 7,
+                "score": 0.1
+            },
+            {
+                "index": 8,
+                "score": 0.8
+            },
+            {
+                "index": 9,
+                "score
+Example 93
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.4
+            },
+            {
+                "index": 4,
+                "score": 0.2
+            },
+            {
+                "index": 5,
+                "score": 0.5
+            },
+            {
+                "index": 6,
+                "score": 0.1
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.3
+            },
+            {
+                "index": 9,
+                "score
+Example 94
+Warning: No valid JSON found in LLM response.
+{
+            "index": 3,
+            "score": 0.7
+         },
+         {
+            "index": 1,
+            "score": 0.3
+         },
+         {
+            "index": 7,
+            "score": 0.5
+         },
+         {
+            "index": 9,
+            "score": 0.2
+         },
+         {
+            "index": 10,
+            "score": 0.8
+         },
+         {
+            "index": 11,
+            "score": 0.4
+         },
+         {
+            "index": 6,
+            "score": 0.6
+         },
+         {
+            "index": 8,
+            "score": 0.3
+         },
+         {
+            "index": 5,
+            "score":
+Example 95
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.2
+            },
+            {
+                "index": 4,
+                "score": 0.8
+            },
+            {
+                "index": 5,
+                "score": 0.4
+            },
+            {
+                "index": 6,
+                "score": 0.6
+            },
+            {
+                "index": 7,
+                "score": 0.5
+            },
+            {
+                "index": 8,
+                "score": 0.9
+            },
+            {
+                "index": 9,
+                "score
+Example 96
+Sorted Documents: [0, 2, 5, 1, 3, 4, 10, 6, 7, 8, 9]
+Removed Distracting Documents: [0, 2, 5]
+Final Improved Documents: [1, 3, 4, 10, 6, 7, 8, 9]
+
+
+Example 97
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.4
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.2
+            },
+            {
+                "index": 9,
+                "score
+Example 98
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.3
+            },
+            {
+                "index": 2,
+                "score": 0.7
+            },
+            {
+                "index": 3,
+                "score": 0.2
+            },
+            {
+                "index": 4,
+                "score": 0.8
+            },
+            {
+                "index": 5,
+                "score": 0.4
+            },
+            {
+                "index": 6,
+                "score": 0.6
+            },
+            {
+                "index": 7,
+                "score": 0.1
+            },
+            {
+                "index": 8,
+                "score": 0.5
+            },
+            {
+                "index": 9,
+                "score
+Example 99
+Sorted Documents: [7, 0, 9, 5, 1, 3, 4, 8, 2, 10, 6]
+Removed Distracting Documents: [7, 0, 9, 5]
+Final Improved Documents: [1, 3, 4, 8, 2, 10, 6]
+
+
+Example 100
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.8
+            },
+            {
+                "index": 6,
+                "score": 0.4
+            },
+            {
+                "index": 7,
+                "score": 0.6
+            },
+            {
+                "index": 8,
+                "score": 0.2
+            },
+            {
+                "index": 9,
+                "score
+Example 101
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.2
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 102
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.9
+            },
+            {
+                "index": 6,
+                "score": 0.5
+            },
+            {
+                "index": 7,
+                "score": 0.1
+            },
+            {
+                "index": 8,
+                "score": 0.7
+            },
+            {
+                "index": 9,
+                "score
+Example 103
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                "score": 0.3
+            },
+            {
+                "index": 3,
+                "score": 0.5
+            },
+            {
+                "index": 4,
+                "score": 0.1
+            },
+            {
+                "index": 5,
+                "score": 0.2
+            },
+            {
+                "index": 6,
+                "score": 0.8
+            },
+            {
+                "index": 7,
+                "score": 0.4
+            },
+            {
+                "index": 8,
+                "score": 0.6
+            },
+            {
+                "index": 9,
+                "score
+Example 104
+Traceback (most recent call last):
+  File "/home/goodh/vinc/5018RAG/src/generate_answers_llm_improved.py", line 224, in <module>
+    main()
+  File "/home/goodh/vinc/5018RAG/src/generate_answers_llm_improved.py", line 212, in main
+    prompt_dataloader = initialize_dataset_and_loader(
+  File "/home/goodh/vinc/5018RAG/src/generate_answers_llm_improved.py", line 104, in initialize_dataset_and_loader
+    prompt_ds = PromptDataset(
+  File "/home/goodh/vinc/5018RAG/src/prompt_dataset.py", line 162, in __init__
+    self._load_data()
+  File "/home/goodh/vinc/5018RAG/src/prompt_dataset.py", line 188, in _load_data
+    self.process_file_data(data)
+  File "/home/goodh/vinc/5018RAG/src/prompt_dataset.py", line 226, in process_file_data
+    formatted_documents = self.improve_documents(query, formatted_documents, self.filtering_threshold)
+  File "/home/goodh/vinc/5018RAG/src/prompt_dataset.py", line 298, in improve_documents
+    response_text = self.llm.generate(prompt_template, max_new_tokens=200)[0]  # 根据需要调整最大token数
+  File "/home/goodh/vinc/5018RAG/src/llm.py", line 123, in generate
+    generated_ids = self.model.generate(
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/transformers/generation/utils.py", line 2047, in generate
+    result = self._sample(
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/transformers/generation/utils.py", line 3007, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/accelerate/hooks.py", line 170, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 1189, in forward
+    outputs = self.model(
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/accelerate/hooks.py", line 170, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 1000, in forward
+    layer_outputs = decoder_layer(
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/accelerate/hooks.py", line 170, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 726, in forward
+    hidden_states = self.input_layernorm(hidden_states)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/accelerate/hooks.py", line 170, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/goodh/miniconda3/envs/5018rag/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 125, in forward
+    variance = hidden_states.pow(2).mean(-1, keepdim=True)
+KeyboardInterrupt
