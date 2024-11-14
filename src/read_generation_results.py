@@ -276,9 +276,9 @@ def main():
     if args.use_test:
         df = pd.read_json('data/test_dataset.json')
     else:
-        # df = pd.read_json('data/10k_train_dataset.json')
+        df = pd.read_json('data/10k_train_dataset.json')
         # df = pd.read_json('data/200_train_dataset.json') # vinc: demo dataset
-        df = pd.read_json('data/154_train_dataset.json') # vinc: demo dataset
+        # df = pd.read_json('data/154_train_dataset.json') # vinc: demo dataset
         # df = pd.read_json('data/100_train_dataset.json') # vinc: demo dataset
         # df = pd.read_json('data/10_train_dataset.json') # vinc: demo dataset
 

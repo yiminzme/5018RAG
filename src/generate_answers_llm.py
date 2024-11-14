@@ -19,9 +19,9 @@ warnings.filterwarnings('ignore')
 # SEED=10
 
 info = {
-    # "data_path": 'data/10k_train_dataset.json',
+    "data_path": 'data/10k_train_dataset.json',
     # "data_path": 'data/200_train_dataset.json', # vinc: demo dataset
-    "data_path": 'data/154_train_dataset.json', # vinc: demo dataset
+    # "data_path": 'data/154_train_dataset.json', # vinc: demo dataset
     # "data_path": 'data/100_train_dataset.json', # vinc: demo dataset
     # "data_path": 'data/10_train_dataset.json', # vinc: demo dataset
     "random_results_path": "data/10k_random_results_at60.pkl",
@@ -44,6 +44,8 @@ def parse_arguments():
     parser.add_argument('--max_new_tokens', type=int, help='Maximum number of tokens to generate', default=15)
     parser.add_argument('--batch_size', type=int)
     parser.add_argument('--save_every', type=int, default=250)
+    parser.add_argument('--max_dataset_size', type=int, default=-1, help='Only use first n data in given dataset, -1 = use all')
+    parser.add_argument('--cot', type=str2bool, default=False, help='use cot to read ranked docs')
 
     parser.add_argument('--seed', type=int, default=10)
     
@@ -110,6 +112,8 @@ def initialize_dataset_and_loader(
         num_documents_in_context=args.num_documents_in_context,
         gold_position=args.gold_position,
         get_documents_without_answer=args.get_documents_without_answer,
+        max_dataset_size=args.max_dataset_size,
+        cot=args.cot, # add cot to read ranked document
     )
     prompt_dataloader = DataLoader(
         prompt_ds,

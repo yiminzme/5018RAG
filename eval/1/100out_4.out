@@ -1,0 +1,6 @@
+Directory:  data/100out_baseline/4doc/Llama-2-7b-chat-hf/train/classic/contriever/4_doc
+I'm using the following files:  ['numdoc4_gold_at2_answerless_info_2.pkl', 'numdoc4_gold_at2_answerless_info_4.pkl', 'numdoc4_gold_at2_answerless_info_6.pkl', 'numdoc4_gold_at2_answerless_info_8.pkl', 'numdoc4_gold_at2_answerless_info_9.pkl']
+ACCURACY:  0.5
+Precision: 1.0
+Recall: 0.5
+F1 Score: 0.6666666666666666

@@ -6,3 +6,4 @@ ijson
 accelerate
 einops
 bitsandbytes
+scikit-learn
