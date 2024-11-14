@@ -25,11 +25,13 @@ class QueryDataset(Dataset):
         data_path: str, 
         model_name: str,
         do_normalize_query: bool = False,
+        max_dataset_size: int = -1,
     ):
         super().__init__()
         self.data_path = data_path
         self.model_name = model_name
         self.do_normalize_query = do_normalize_query
+        self.max_dataset_size = max_dataset_size
         self._load_data()
 
 
@@ -50,7 +52,10 @@ class QueryDataset(Dataset):
         self.questions = []
         self.example_ids = []
 
-        for example in data:
+        for idx, example in enumerate(data):
+            if self.max_dataset_size != -1 and idx >= self.max_dataset_size:
+                print('stop')
+                break
             self.example_ids.append(example['example_id'])
 
             if 'query' in example:
@@ -138,8 +143,10 @@ class PromptDataset(Dataset):
         randomize_gold_position: bool = False,
         get_documents_without_answer: bool = False,
         improve_docs: bool = False,
+        cot: bool = False,
         filtering_threshold: float = 0.5,
         llm: LLM = None,
+        max_dataset_size: int = -1, # johnny for size restriction
     ):
         super().__init__()
         self.corpus = corpus
@@ -154,8 +161,10 @@ class PromptDataset(Dataset):
         self.randomize_gold_position = randomize_gold_position
         self.get_documents_without_answer = get_documents_without_answer
         self.improve_docs = improve_docs
+        self.cot = cot
         self.filtering_threshold = filtering_threshold
         self.llm = llm
+        self.max_dataset_size = max_dataset_size
     
         
         self._validate_initialization_parameters()
@@ -210,6 +219,9 @@ class PromptDataset(Dataset):
         self.prompt_tokens_lengths = []
 
         for idx, example in enumerate(data):
+            if self.max_dataset_size != -1 and idx >= self.max_dataset_size:
+                print('stop')
+                break
             if self.improve_docs:
                 print(f"Example {idx}") 
             example_id = str(example['example_id'])
@@ -223,8 +235,10 @@ class PromptDataset(Dataset):
             # Build the prompt
             query = example['question']
             if self.improve_docs: # vinc: improve the quality of the documents
-                formatted_documents = self.improve_documents(query, formatted_documents, self.filtering_threshold)
+                formatted_documents = self.improve_documents(query, formatted_documents, self.filtering_threshold, self.cot)
             documents_str = '\n'.join(formatted_documents)
+            if self.cot:
+                query += '\nLet\'s think step by step'
             if self.do_normalize_query:
                 query = normalize_text.normalize(query)
             prompt = self.build_qa_prompt(query, documents_str)
@@ -258,7 +272,7 @@ class PromptDataset(Dataset):
         # return in revser order
         return documents[:4][::-1]
 
-    def improve_documents(self, query: str, documents: List[str], filtering_threshold: float) -> List[str]:
+    def improve_documents(self, query: str, documents: List[str], filtering_threshold: float, cot_f: bool = False) -> List[str]:
         """
         Scheme 1: sort, keep docs
         Scheme 2: sort, reduce docs

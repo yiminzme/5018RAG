@@ -1,3 +1,9 @@
+data/gen_res*/*
+data/corpus.json
+data/processed/corpus_with_contriever_at150.json
+data/100out_*/*
+data/test*/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

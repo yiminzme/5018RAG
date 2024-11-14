@@ -1,0 +1,2005 @@
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.55s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.60s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.74s/it]
+LLM loaded
+
+ARGUMENTS:
+output_dir: data/gen_res
+llm_id: meta-llama/Llama-2-7b-chat-hf
+model_max_length: 4096
+load_full_corpus: False
+use_random: False
+use_adore: False
+gold_position: 4
+num_documents_in_context: 9
+get_documents_without_answer: True
+max_new_tokens: 15
+batch_size: 18
+save_every: 2
+cot: False
+max_dataset_size: 154
+filtering_threshold: 0.5
+seed: 10
+
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+Example 0
+Sorted Documents: [4, 6, 0, 2, 8, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 7, 1, 5, 3]
+
+
+Example 1
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 2
+Sorted Documents: [4, 6, 0, 7, 2, 8, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 7, 2]
+Final Improved Documents: [8, 1, 5, 3]
+
+
+Example 3
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 4
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 5
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 6
+Sorted Documents: [7, 3, 1, 5, 6, 8, 4, 0, 2]
+Removed Distracting Documents: [7, 3, 1, 5, 6]
+Final Improved Documents: [8, 4, 0, 2]
+
+
+Example 7
+Sorted Documents: [4, 5, 0, 6, 2, 8, 7, 1, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [8, 7, 1, 3]
+
+
+Example 8
+Sorted Documents: [7, 4, 0, 5, 2, 8, 6, 1, 3]
+Removed Distracting Documents: [7, 4, 0, 5, 2]
+Final Improved Documents: [8, 6, 1, 3]
+
+
+Example 9
+Sorted Documents: [3, 5, 0, 7, 4, 6, 1, 8, 2]
+Removed Distracting Documents: [3, 5, 0, 7, 4]
+Final Improved Documents: [6, 1, 8, 2]
+
+
+Example 10
+Sorted Documents: [4, 0, 7, 2, 6, 1, 8, 3, 5]
+Removed Distracting Documents: [4, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 3, 5]
+
+
+Example 11
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 12
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 13
+Sorted Documents: [4, 0, 6, 2, 8, 5, 1, 7, 3]
+Removed Distracting Documents: [4, 0, 6, 2]
+Final Improved Documents: [8, 5, 1, 7, 3]
+
+
+Example 14
+Sorted Documents: [6, 3, 0, 7, 5, 2, 8, 4, 1]
+Removed Distracting Documents: [6, 3, 0, 7, 5, 2]
+Final Improved Documents: [8, 4, 1]
+
+
+Example 15
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 16
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 17
+Sorted Documents: [8, 4, 0, 6, 2, 5, 1, 7, 3]
+Removed Distracting Documents: [8, 4, 0, 6, 2]
+Final Improved Documents: [5, 1, 7, 3]
+
+
+Example 18
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 19
+Sorted Documents: [8, 4, 0, 6, 2, 5, 1, 7, 3]
+Removed Distracting Documents: [8, 4, 0, 6, 2]
+Final Improved Documents: [5, 1, 7, 3]
+
+
+Example 20
+Sorted Documents: [3, 7, 0, 5, 4, 8, 1, 6, 2]
+Removed Distracting Documents: [3, 7, 0, 5, 4]
+Final Improved Documents: [8, 1, 6, 2]
+
+
+Example 21
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 22
+Sorted Documents: [4, 0, 6, 2, 8, 5, 1, 7, 3]
+Removed Distracting Documents: [4, 0, 6, 2]
+Final Improved Documents: [8, 5, 1, 7, 3]
+
+
+Example 23
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 24
+Sorted Documents: [4, 6, 0, 2, 8, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 7, 1, 5, 3]
+
+
+Example 25
+Warning: No valid JSON found in LLM response.
+[
+            { "index": 1, "score": 0.7 }, // Document 1: Very unlikely to contain the correct answer
+            { "index": 2, "score": 0.3 }, // Document 2: Unlikely to contain the correct answer
+            { "index": 3, "score": 0.5 }, // Document 3: Somewhat likely to contain the correct answer
+            { "index": 4, "score": 0.1 }, // Document 4: Very unlikely to contain the correct answer
+            { "index": 5, "score": 0.8 }, // Document 5: Somewhat likely to contain the correct answer
+            { "index": 6, "score": 0.2 }, // Document 6: Unlikely to contain the correct answer
+            { "index": 7, "score": 0.4 }, // Document 7: Somewhat likely to contain the correct answer
+            { "index": 8, "score": 0.6 }, // Document 8: Very unlikely to contain the correct answer
+            { "index": 9, "score": 0.3 } // Document 9: Unlikely to contain the correct answer
+Example 26
+Sorted Documents: [4, 8, 5, 0, 6, 2, 7, 1, 3]
+Removed Distracting Documents: [4, 8, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 3]
+
+
+Example 27
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 28
+Sorted Documents: [7, 4, 0, 6, 2, 5, 1, 8, 3]
+Removed Distracting Documents: [7, 4, 0, 6, 2]
+Final Improved Documents: [5, 1, 8, 3]
+
+
+Example 29
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 30
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 31
+Sorted Documents: [7, 1, 5, 6, 8, 4, 0, 2, 3]
+Removed Distracting Documents: [7, 1, 5, 6]
+Final Improved Documents: [8, 4, 0, 2, 3]
+
+
+Example 32
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 33
+Sorted Documents: [8, 7, 0, 6, 2, 5, 1, 4, 3]
+Removed Distracting Documents: [8, 7, 0, 6, 2]
+Final Improved Documents: [5, 1, 4, 3]
+
+
+Example 34
+Sorted Documents: [5, 0, 7, 2, 8, 6, 1, 4, 3]
+Removed Distracting Documents: [5, 0, 7, 2]
+Final Improved Documents: [8, 6, 1, 4, 3]
+
+
+Example 35
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 36
+Sorted Documents: [4, 0, 3, 7, 8, 1, 5, 2, 6]
+Removed Distracting Documents: [4, 0, 3, 7]
+Final Improved Documents: [8, 1, 5, 2, 6]
+
+
+Example 37
+Sorted Documents: [1, 4, 6, 3, 8, 5, 0, 7, 2]
+Removed Distracting Documents: [1, 4, 6, 3]
+Final Improved Documents: [8, 5, 0, 7, 2]
+
+
+Example 38
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 39
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 40
+Sorted Documents: [6, 5, 1, 3, 2, 0, 7, 4, 8]
+Removed Distracting Documents: [6, 5, 1, 3]
+Final Improved Documents: [2, 0, 7, 4, 8]
+
+
+Example 41
+Sorted Documents: [4, 6, 0, 2, 8, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 7, 1, 5, 3]
+
+
+Example 42
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 3]
+
+
+Example 43
+Sorted Documents: [4, 0, 6, 2, 8, 5, 1, 7, 3]
+Removed Distracting Documents: [4, 0, 6, 2]
+Final Improved Documents: [8, 5, 1, 7, 3]
+
+
+Example 44
+Sorted Documents: [4, 7, 0, 2, 8, 1, 5, 3, 6]
+Removed Distracting Documents: [4, 7, 0, 2, 8]
+Final Improved Documents: [1, 5, 3, 6]
+
+
+Example 45
+Sorted Documents: [4, 0, 6, 2, 8, 7, 1, 3, 5]
+Removed Distracting Documents: [4, 0, 6, 2]
+Final Improved Documents: [8, 7, 1, 3, 5]
+
+
+Example 46
+Sorted Documents: [4, 0, 7, 2, 8, 6, 1, 5, 3]
+Removed Distracting Documents: [4, 0, 7, 2]
+Final Improved Documents: [8, 6, 1, 5, 3]
+
+
+Example 47
+Sorted Documents: [3, 5, 0, 7, 4, 6, 1, 8, 2]
+Removed Distracting Documents: [3, 5, 0, 7, 4]
+Final Improved Documents: [6, 1, 8, 2]
+
+
+Example 48
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 49
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 50
+Sorted Documents: [4, 0, 6, 2, 5, 1, 8, 7, 3]
+Removed Distracting Documents: [4, 0, 6, 2]
+Final Improved Documents: [5, 1, 8, 7, 3]
+
+
+Example 51
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 52
+Sorted Documents: [8, 4, 0, 6, 2, 5, 1, 7, 3]
+Removed Distracting Documents: [8, 4, 0, 6, 2]
+Final Improved Documents: [5, 1, 7, 3]
+
+
+Example 53
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 3]
+
+
+Example 54
+Sorted Documents: [7, 5, 1, 3, 4, 8, 2, 0, 6]
+Removed Distracting Documents: [7, 5, 1, 3, 4]
+Final Improved Documents: [8, 2, 0, 6]
+
+
+Example 55
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 56
+Sorted Documents: [4, 6, 0, 7, 2, 8, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 7, 2]
+Final Improved Documents: [8, 1, 5, 3]
+
+
+Example 57
+Sorted Documents: [6, 2, 0, 4, 5, 3, 1, 8, 7]
+Removed Distracting Documents: [6, 2, 0, 4, 5]
+Final Improved Documents: [3, 1, 8, 7]
+
+
+Example 58
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 59
+Sorted Documents: [8, 4, 0, 6, 2, 5, 1, 7, 3]
+Removed Distracting Documents: [8, 4, 0, 6, 2]
+Final Improved Documents: [5, 1, 7, 3]
+
+
+Example 60
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 61
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 62
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 3]
+
+
+Example 63
+Sorted Documents: [4, 6, 0, 2, 8, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 7, 1, 5, 3]
+
+
+Example 64
+Sorted Documents: [4, 0, 6, 2, 8, 5, 1, 3, 7]
+Removed Distracting Documents: [4, 0, 6, 2]
+Final Improved Documents: [8, 5, 1, 3, 7]
+
+
+Example 65
+Sorted Documents: [7, 1, 3, 4, 8, 2, 0, 5, 6]
+Removed Distracting Documents: [7, 1, 3, 4]
+Final Improved Documents: [8, 2, 0, 5, 6]
+
+
+Example 66
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 3]
+
+
+Example 67
+Sorted Documents: [4, 5, 0, 7, 2, 8, 6, 1, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [8, 6, 1, 3]
+
+
+Example 68
+Sorted Documents: [4, 6, 0, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 69
+Error in processing LLM response: Expecting value: line 2 column 43 (char 44). Returning all documents by default.
+Example 70
+Sorted Documents: [0, 6, 2, 4, 8, 1, 7, 3, 5]
+Removed Distracting Documents: [0, 6, 2]
+Final Improved Documents: [4, 8, 1, 7, 3, 5]
+
+
+Example 71
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 72
+Sorted Documents: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+
+Example 73
+Sorted Documents: [4, 6, 0, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 74
+Sorted Documents: [7, 5, 1, 3, 4, 8, 2, 0, 6]
+Removed Distracting Documents: [7, 5, 1, 3, 4]
+Final Improved Documents: [8, 2, 0, 6]
+
+
+Example 75
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 3]
+
+
+Example 76
+Sorted Documents: [2, 5, 0, 7, 4, 8, 1, 6, 3]
+Removed Distracting Documents: [2, 5, 0, 7, 4]
+Final Improved Documents: [8, 1, 6, 3]
+
+
+Example 77
+Sorted Documents: [4, 0, 7, 2, 6, 1, 8, 5, 3]
+Removed Distracting Documents: [4, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 5, 3]
+
+
+Example 78
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 79
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 80
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 3]
+
+
+Example 81
+Sorted Documents: [4, 0, 6, 2, 8, 5, 1, 7, 3]
+Removed Distracting Documents: [4, 0, 6, 2]
+Final Improved Documents: [8, 5, 1, 7, 3]
+
+
+Example 82
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 83
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 84
+Sorted Documents: [4, 0, 7, 2, 6, 1, 8, 5, 3]
+Removed Distracting Documents: [4, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 5, 3]
+
+
+Example 85
+Sorted Documents: [4, 0, 7, 2, 6, 1, 8, 5, 3]
+Removed Distracting Documents: [4, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 5, 3]
+
+
+Example 86
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 87
+Sorted Documents: [7, 0, 5, 2, 8, 4, 1, 3, 6]
+Removed Distracting Documents: [7, 0, 5, 2]
+Final Improved Documents: [8, 4, 1, 3, 6]
+
+
+Example 88
+Sorted Documents: [4, 6, 0, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 89
+Sorted Documents: [4, 6, 0, 2, 8, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 7, 1, 5, 3]
+
+
+Example 90
+Sorted Documents: [4, 6, 0, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 91
+Sorted Documents: [4, 6, 0, 2, 8, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 7, 1, 5, 3]
+
+
+Example 92
+Sorted Documents: [4, 6, 0, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 93
+Sorted Documents: [3, 5, 0, 7, 4, 6, 1, 8, 2]
+Removed Distracting Documents: [3, 5, 0, 7, 4]
+Final Improved Documents: [6, 1, 8, 2]
+
+
+Example 94
+Sorted Documents: [8, 6, 7, 4, 1, 5, 2, 3, 0]
+Removed Distracting Documents: [8, 6, 7, 4]
+Final Improved Documents: [1, 5, 2, 3, 0]
+
+
+Example 95
+Sorted Documents: [7, 3, 1, 5, 6, 8, 4, 0, 2]
+Removed Distracting Documents: [7, 3, 1, 5, 6]
+Final Improved Documents: [8, 4, 0, 2]
+
+
+Example 96
+Sorted Documents: [8, 4, 0, 6, 2, 5, 1, 7, 3]
+Removed Distracting Documents: [8, 4, 0, 6, 2]
+Final Improved Documents: [5, 1, 7, 3]
+
+
+Example 97
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 98
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 99
+Sorted Documents: [0, 6, 1, 3, 4, 5, 7, 2, 8]
+Removed Distracting Documents: [0, 6]
+Final Improved Documents: [1, 3, 4, 5, 7, 2, 8]
+
+
+Example 100
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 101
+Sorted Documents: [4, 0, 7, 2, 6, 1, 8, 5, 3]
+Removed Distracting Documents: [4, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 5, 3]
+
+
+Example 102
+Sorted Documents: [4, 6, 0, 2, 8, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 7, 1, 5, 3]
+
+
+Example 103
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 104
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 105
+Sorted Documents: [4, 0, 7, 2, 6, 1, 8, 3, 5]
+Removed Distracting Documents: [4, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 3, 5]
+
+
+Example 106
+Sorted Documents: [4, 6, 0, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 107
+Sorted Documents: [8, 4, 0, 5, 2, 6, 1, 7, 3]
+Removed Distracting Documents: [8, 4, 0, 5, 2]
+Final Improved Documents: [6, 1, 7, 3]
+
+
+Example 108
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 109
+Sorted Documents: [6, 3, 0, 8, 5, 2, 4, 1, 7]
+Removed Distracting Documents: [6, 3, 0, 8, 5, 2]
+Final Improved Documents: [4, 1, 7]
+
+
+Example 110
+Sorted Documents: [4, 0, 7, 2, 8, 6, 1, 3, 5]
+Removed Distracting Documents: [4, 0, 7, 2]
+Final Improved Documents: [8, 6, 1, 3, 5]
+
+
+Example 111
+Sorted Documents: [8, 4, 0, 6, 2, 5, 1, 7, 3]
+Removed Distracting Documents: [8, 4, 0, 6, 2]
+Final Improved Documents: [5, 1, 7, 3]
+
+
+Example 112
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 113
+Sorted Documents: [4, 0, 7, 2, 8, 6, 1, 5, 3]
+Removed Distracting Documents: [4, 0, 7, 2]
+Final Improved Documents: [8, 6, 1, 5, 3]
+
+
+Example 114
+Sorted Documents: [3, 5, 1, 8, 7, 0, 6, 4, 2]
+Removed Distracting Documents: [3, 5, 1]
+Final Improved Documents: [8, 7, 0, 6, 4, 2]
+
+
+Example 115
+Sorted Documents: [4, 5, 0, 6, 2, 8, 7, 1, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [8, 7, 1, 3]
+
+
+Example 116
+Sorted Documents: [4, 6, 0, 2, 8, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 7, 1, 5, 3]
+
+
+Example 117
+Sorted Documents: [4, 0, 7, 2, 6, 1, 8, 3, 5]
+Removed Distracting Documents: [4, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 3, 5]
+
+
+Example 118
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 119
+Sorted Documents: [4, 6, 0, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 120
+Sorted Documents: [4, 5, 0, 7, 2, 8, 6, 1, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [8, 6, 1, 3]
+
+
+Example 121
+Sorted Documents: [4, 1, 2, 5, 6, 7, 8, 0, 3]
+Removed Distracting Documents: [4, 1, 2]
+Final Improved Documents: [5, 6, 7, 8, 0, 3]
+
+
+Example 122
+Sorted Documents: [0, 6, 2, 8, 4, 1, 7, 3, 5]
+Removed Distracting Documents: [0, 6, 2]
+Final Improved Documents: [8, 4, 1, 7, 3, 5]
+
+
+Example 123
+Sorted Documents: [4, 0, 6, 2, 7, 1, 8, 3, 5]
+Removed Distracting Documents: [4, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3, 5]
+
+
+Example 124
+Sorted Documents: [4, 5, 0, 7, 2, 8, 6, 1, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [8, 6, 1, 3]
+
+
+Example 125
+Sorted Documents: [7, 1, 6, 3, 8, 4, 0, 2, 5]
+Removed Distracting Documents: [7, 1, 6, 3]
+Final Improved Documents: [8, 4, 0, 2, 5]
+
+
+Example 126
+Sorted Documents: [4, 6, 0, 2, 8, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 7, 1, 5, 3]
+
+
+Example 127
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 3]
+
+
+Example 128
+Sorted Documents: [7, 0, 5, 1, 3, 4, 2, 6, 8]
+Removed Distracting Documents: [7, 0, 5]
+Final Improved Documents: [1, 3, 4, 2, 6, 8]
+
+
+Example 129
+Sorted Documents: [4, 5, 0, 7, 2, 8, 6, 1, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [8, 6, 1, 3]
+
+
+Example 130
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 131
+Sorted Documents: [4, 5, 0, 7, 2, 8, 6, 1, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [8, 6, 1, 3]
+
+
+Example 132
+Sorted Documents: [4, 0, 6, 2, 5, 1, 8, 7, 3]
+Removed Distracting Documents: [4, 0, 6, 2]
+Final Improved Documents: [5, 1, 8, 7, 3]
+
+
+Example 133
+Sorted Documents: [4, 0, 6, 2, 7, 1, 8, 3, 5]
+Removed Distracting Documents: [4, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3, 5]
+
+
+Example 134
+Sorted Documents: [7, 3, 1, 5, 8, 4, 0, 2, 6]
+Removed Distracting Documents: [7, 3, 1, 5]
+Final Improved Documents: [8, 4, 0, 2, 6]
+
+
+Example 135
+Sorted Documents: [4, 0, 6, 2, 8, 5, 1, 7, 3]
+Removed Distracting Documents: [4, 0, 6, 2]
+Final Improved Documents: [8, 5, 1, 7, 3]
+
+
+Example 136
+Sorted Documents: [4, 6, 0, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 137
+Sorted Documents: [4, 6, 0, 2, 8, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 7, 1, 5, 3]
+
+
+Example 138
+Sorted Documents: [7, 4, 0, 5, 2, 6, 1, 8, 3]
+Removed Distracting Documents: [7, 4, 0, 5, 2]
+Final Improved Documents: [6, 1, 8, 3]
+
+
+Example 139
+Sorted Documents: [7, 3, 1, 5, 6, 4, 0, 2, 8]
+Removed Distracting Documents: [7, 3, 1, 5, 6]
+Final Improved Documents: [4, 0, 2, 8]
+
+
+Example 140
+Sorted Documents: [7, 1, 3, 4, 2, 0, 8, 5, 6]
+Removed Distracting Documents: [7, 1, 3, 4]
+Final Improved Documents: [2, 0, 8, 5, 6]
+
+
+Example 141
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 142
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 3]
+
+
+Example 143
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 144
+Sorted Documents: [7, 2, 0, 4, 6, 8, 3, 1, 5]
+Removed Distracting Documents: [7, 2, 0, 4, 6]
+Final Improved Documents: [8, 3, 1, 5]
+
+
+Example 145
+Sorted Documents: [5, 0, 7, 2, 6, 1, 8, 4, 3]
+Removed Distracting Documents: [5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 4, 3]
+
+
+Example 146
+Sorted Documents: [4, 6, 0, 2, 8, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 7, 1, 5, 3]
+
+
+Example 147
+Sorted Documents: [4, 0, 6, 2, 7, 1, 8, 3, 5]
+Removed Distracting Documents: [4, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3, 5]
+
+
+Example 148
+Sorted Documents: [4, 6, 0, 2, 8, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 7, 1, 5, 3]
+
+
+Example 149
+Sorted Documents: [3, 5, 0, 6, 4, 8, 7, 1, 2]
+Removed Distracting Documents: [3, 5, 0, 6, 4]
+Final Improved Documents: [8, 7, 1, 2]
+
+
+Example 150
+Sorted Documents: [5, 4, 1, 7, 3, 6, 8, 2, 0]
+Removed Distracting Documents: [5, 4, 1, 7, 3, 6]
+Final Improved Documents: [8, 2, 0]
+
+
+Example 151
+Sorted Documents: [5, 4, 0, 6, 2, 7, 1, 8, 3]
+Removed Distracting Documents: [5, 4, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 152
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 153
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 4
+NUM DOCUMENTS IN CONTEXT: 9
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:01<00:14,  1.75s/it] 22%|██▏       | 2/9 [00:03<00:13,  1.91s/it] 33%|███▎      | 3/9 [00:05<00:09,  1.66s/it] 44%|████▍     | 4/9 [00:07<00:08,  1.76s/it] 56%|█████▌    | 5/9 [00:08<00:07,  1.78s/it] 67%|██████▋   | 6/9 [00:10<00:05,  1.73s/it] 78%|███████▊  | 7/9 [00:12<00:03,  1.66s/it] 89%|████████▉ | 8/9 [00:13<00:01,  1.59s/it]100%|██████████| 9/9 [00:14<00:00,  1.40s/it]100%|██████████| 9/9 [00:14<00:00,  1.61s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+time used:  1072.9716730117798
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.60s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.65s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.80s/it]
+LLM loaded
+
+ARGUMENTS:
+output_dir: data/gen_res
+llm_id: meta-llama/Llama-2-7b-chat-hf
+model_max_length: 4096
+load_full_corpus: False
+use_random: False
+use_adore: False
+gold_position: 4
+num_documents_in_context: 10
+get_documents_without_answer: True
+max_new_tokens: 15
+batch_size: 18
+save_every: 2
+cot: False
+max_dataset_size: 154
+filtering_threshold: 0.5
+seed: 10
+
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+Example 0
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 1
+Sorted Documents: [4, 6, 0, 2, 9, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2, 9]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 2
+Sorted Documents: [4, 5, 0, 6, 2, 9, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2, 9]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 3
+Sorted Documents: [4, 9, 5, 0, 7, 2, 6, 1, 8, 3]
+Removed Distracting Documents: [4, 9, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 3]
+
+
+Example 4
+Sorted Documents: [4, 5, 0, 6, 2, 9, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2, 9]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 5
+Sorted Documents: [3, 8, 0, 5, 4, 9, 1, 6, 2, 7]
+Removed Distracting Documents: [3, 8, 0, 5, 4, 9]
+Final Improved Documents: [1, 6, 2, 7]
+
+
+Example 6
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 7
+Sorted Documents: [3, 8, 0, 5, 4, 9, 1, 6, 2, 7]
+Removed Distracting Documents: [3, 8, 0, 5, 4, 9]
+Final Improved Documents: [1, 6, 2, 7]
+
+
+Example 8
+Sorted Documents: [3, 1, 5, 6, 9, 4, 0, 7, 2, 8]
+Removed Distracting Documents: [3, 1, 5, 6]
+Final Improved Documents: [9, 4, 0, 7, 2, 8]
+
+
+Example 9
+Sorted Documents: [8, 4, 1, 6, 3, 7, 0, 9, 2, 5]
+Removed Distracting Documents: [8, 4, 1, 6, 3]
+Final Improved Documents: [7, 0, 9, 2, 5]
+
+
+Example 10
+Sorted Documents: [9, 4, 1, 7, 3, 6, 0, 8, 2, 5]
+Removed Distracting Documents: [9, 4, 1, 7, 3]
+Final Improved Documents: [6, 0, 8, 2, 5]
+
+
+Example 11
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 12
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 13
+Sorted Documents: [9, 4, 0, 6, 2, 7, 1, 8, 3, 5]
+Removed Distracting Documents: [9, 4, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3, 5]
+
+
+Example 14
+Sorted Documents: [4, 0, 6, 2, 9, 7, 1, 8, 3, 5]
+Removed Distracting Documents: [4, 0, 6, 2, 9]
+Final Improved Documents: [7, 1, 8, 3, 5]
+
+
+Example 15
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 9, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 9, 8, 3]
+
+
+Example 16
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 17
+Sorted Documents: [4, 6, 0, 8, 2, 9, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [9, 1, 7, 5, 3]
+
+
+Example 18
+Sorted Documents: [9, 2, 7, 8, 1, 3, 4, 5, 6, 0]
+Removed Distracting Documents: [9, 2, 7, 8]
+Final Improved Documents: [1, 3, 4, 5, 6, 0]
+
+
+Example 19
+Sorted Documents: [9, 4, 0, 6, 2, 5, 1, 8, 7, 3]
+Removed Distracting Documents: [9, 4, 0, 6, 2]
+Final Improved Documents: [5, 1, 8, 7, 3]
+
+
+Example 20
+Sorted Documents: [1, 7, 9, 6, 4, 0, 5, 2, 3, 8]
+Removed Distracting Documents: [1, 7, 9, 6]
+Final Improved Documents: [4, 0, 5, 2, 3, 8]
+
+
+Example 21
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 22
+Sorted Documents: [4, 6, 0, 9, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 9, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 23
+Sorted Documents: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+Example 24
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 25
+Error in processing LLM response: Expecting value: line 2 column 43 (char 44). Returning all documents by default.
+Example 26
+Sorted Documents: [4, 8, 5, 0, 6, 2, 9, 7, 1, 3]
+Removed Distracting Documents: [4, 8, 5, 0, 6, 2, 9]
+Final Improved Documents: [7, 1, 3]
+
+
+Example 27
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 28
+Warning: No valid JSON found in LLM response.
+[
+            { "index": 1, "score": 0.7 }, // Document 1: unlikely to contain the correct answer
+            { "index": 2, "score": 0.3 }, // Document 2: unlikely to contain the correct answer
+            { "index": 3, "score": 0.5 }, // Document 3: somewhat likely to contain the correct answer
+            { "index": 4, "score": 0.1 }, // Document 4: very unlikely to contain the correct answer
+            { "index": 5, "score": 0.8 }, // Document 5: very likely to contain the correct answer
+            { "index": 6, "score": 0.2 }, // Document 6: somewhat unlikely to contain the correct answer
+            { "index": 7, "score": 0.4 }, // Document 7: somewhat likely to contain the correct answer
+            { "index": 8, "score": 0.6 }, // Document 8: very likely to contain the correct answer
+            { "index": 9, "score": 0.9 }, // Document 9: very likely to contain the correct answer
+            { "index": 10, "score": 0.1 } // Document 10: very unlikely to contain the correct
+Example 29
+Sorted Documents: [4, 8, 0, 7, 2, 6, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 8, 0, 7, 2]
+Final Improved Documents: [6, 1, 9, 5, 3]
+
+
+Example 30
+Sorted Documents: [6, 1, 3, 4, 9, 2, 8, 0, 7, 5]
+Removed Distracting Documents: [6, 1, 3, 4, 9]
+Final Improved Documents: [2, 8, 0, 7, 5]
+
+
+Example 31
+Sorted Documents: [9, 8, 1, 7, 6, 5, 4, 0, 2, 3]
+Removed Distracting Documents: [9, 8, 1, 7, 6, 5]
+Final Improved Documents: [4, 0, 2, 3]
+
+
+Example 32
+Warning: No valid JSON found in LLM response.
+[
+            { "index": 1, "score": 0.3 }, // Document 1: Very unlikely to contain the correct answer
+            { "index": 2, "score": 0.7 }, // Document 2: Unlikely to contain the correct answer
+            { "index": 3, "score": 0.5 }, // Document 3: Unlikely to contain the correct answer
+            { "index": 4, "score": 0.2 }, // Document 4: Very unlikely to contain the correct answer
+            { "index": 5, "score": 0.1 }, // Document 5: Very unlikely to contain the correct answer
+            { "index": 6, "score": 0.8 }, // Document 6: Unlikely to contain the correct answer
+            { "index": 7, "score": 0.6 }, // Document 7: Unlikely to contain the correct answer
+            { "index": 8, "score": 0.4 }, // Document 8: Unlikely to contain the correct answer
+            { "index": 9, "score": 0.9 }, // Document 9: Very likely to contain the correct answer
+            { "index": 10, "score": 0.3 } // Document 10: Very unlikely to contain
+Example 33
+Sorted Documents: [0, 9, 3, 1, 4, 5, 7, 8, 2, 6]
+Removed Distracting Documents: [0, 9, 3]
+Final Improved Documents: [1, 4, 5, 7, 8, 2, 6]
+
+
+Example 34
+Sorted Documents: [4, 6, 0, 9, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 9, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 35
+Sorted Documents: [9, 8, 2, 7, 5, 1, 3, 4, 6, 0]
+Removed Distracting Documents: [9, 8, 2, 7, 5]
+Final Improved Documents: [1, 3, 4, 6, 0]
+
+
+Example 36
+Warning: No valid JSON found in LLM response.
+[
+            {
+                "index": 1,
+                "score": 0.7
+            },
+            {
+                "index": 2,
+                document: {
+                    "title": "Area codes 587 and 825",
+                    "content": "Area codes 587 and 825 are telephone area codes that cover all of Alberta, Canada, in addition to the incumbent codes, southern Alberta's 403 and northern Alberta's 780."
+                },
+                "score": 0.8
+            },
+            {
+                "index": 3,
+                document: {
+                    "title": "ZIP Codes",
+                    "content": "Which are Washington, D.C. ZIP Codes, even if they are not located in Washington itself."
+                },
+                "score": 0.6
+            },
+            {
+                "index": 4,
+                document: {
+                    "title": "Area code 785",
+                    "content": "at this point, area code 785 reaches its easternmost boundary with the current boundary for area code 913,"
+                },
+                "score": 0.5
+            },
+Example 37
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 38
+Sorted Documents: [8, 4, 0, 6, 2, 5, 1, 9, 7, 3]
+Removed Distracting Documents: [8, 4, 0, 6, 2]
+Final Improved Documents: [5, 1, 9, 7, 3]
+
+
+Example 39
+Sorted Documents: [8, 3, 1, 5, 7, 6, 0, 9, 2, 4]
+Removed Distracting Documents: [8, 3, 1, 5, 7]
+Final Improved Documents: [6, 0, 9, 2, 4]
+
+
+Example 40
+Sorted Documents: [1, 3, 8, 5, 6, 4, 9, 0, 7, 2]
+Removed Distracting Documents: [1, 3, 8, 5, 6]
+Final Improved Documents: [4, 9, 0, 7, 2]
+
+
+Example 41
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 42
+Sorted Documents: [4, 9, 5, 0, 7, 2, 6, 1, 8, 3]
+Removed Distracting Documents: [4, 9, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 3]
+
+
+Example 43
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 44
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 9, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 9, 3]
+
+
+Example 45
+Sorted Documents: [4, 6, 0, 2, 8, 9, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [8, 9, 7, 1, 5, 3]
+
+
+Example 46
+Sorted Documents: [9, 4, 0, 7, 2, 6, 1, 8, 5, 3]
+Removed Distracting Documents: [9, 4, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 5, 3]
+
+
+Example 47
+Sorted Documents: [3, 5, 0, 7, 4, 9, 6, 1, 8, 2]
+Removed Distracting Documents: [3, 5, 0, 7, 4, 9]
+Final Improved Documents: [6, 1, 8, 2]
+
+
+Example 48
+Sorted Documents: [6, 2, 0, 8, 4, 5, 9, 3, 1, 7]
+Removed Distracting Documents: [6, 2, 0, 8, 4, 5, 9]
+Final Improved Documents: [3, 1, 7]
+
+
+Example 49
+Sorted Documents: [4, 6, 0, 8, 2, 9, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2, 9]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 50
+Sorted Documents: [4, 0, 6, 2, 9, 5, 1, 8, 7, 3]
+Removed Distracting Documents: [4, 0, 6, 2, 9]
+Final Improved Documents: [5, 1, 8, 7, 3]
+
+
+Example 51
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 52
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 53
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 54
+Sorted Documents: [7, 1, 3, 4, 8, 9, 2, 0, 5, 6]
+Removed Distracting Documents: [7, 1, 3, 4]
+Final Improved Documents: [8, 9, 2, 0, 5, 6]
+
+
+Example 55
+Sorted Documents: [4, 0, 8, 6, 2, 7, 1, 9, 3, 5]
+Removed Distracting Documents: [4, 0, 8, 6, 2]
+Final Improved Documents: [7, 1, 9, 3, 5]
+
+
+Example 56
+Sorted Documents: [4, 6, 0, 7, 2, 9, 8, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 7, 2, 9]
+Final Improved Documents: [8, 1, 5, 3]
+
+
+Example 57
+Sorted Documents: [2, 6, 4, 8, 3, 7, 0, 9, 5, 1]
+Removed Distracting Documents: [2, 6, 4, 8, 3]
+Final Improved Documents: [7, 0, 9, 5, 1]
+
+
+Example 58
+Sorted Documents: [3, 9, 5, 0, 7, 4, 6, 1, 8, 2]
+Removed Distracting Documents: [3, 9, 5, 0, 7, 4]
+Final Improved Documents: [6, 1, 8, 2]
+
+
+Example 59
+Sorted Documents: [3, 6, 0, 8, 4, 7, 1, 9, 5, 2]
+Removed Distracting Documents: [3, 6, 0, 8, 4]
+Final Improved Documents: [7, 1, 9, 5, 2]
+
+
+Example 60
+Sorted Documents: [4, 6, 0, 8, 2, 9, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2, 9]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 61
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 62
+Sorted Documents: [4, 5, 0, 7, 2, 9, 6, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2, 9]
+Final Improved Documents: [6, 1, 8, 3]
+
+
+Example 63
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 64
+Sorted Documents: [8, 4, 0, 6, 2, 5, 1, 9, 3, 7]
+Removed Distracting Documents: [8, 4, 0, 6, 2]
+Final Improved Documents: [5, 1, 9, 3, 7]
+
+
+Example 65
+Sorted Documents: [7, 5, 1, 3, 4, 2, 0, 9, 6, 8]
+Removed Distracting Documents: [7, 5, 1, 3, 4]
+Final Improved Documents: [2, 0, 9, 6, 8]
+
+
+Example 66
+Sorted Documents: [2, 4, 0, 5, 8, 6, 1, 9, 7, 3]
+Removed Distracting Documents: [2, 4, 0, 5, 8]
+Final Improved Documents: [6, 1, 9, 7, 3]
+
+
+Example 67
+Sorted Documents: [4, 1, 9, 7, 3, 6, 0, 8, 2, 5]
+Removed Distracting Documents: [4, 1, 9, 7, 3]
+Final Improved Documents: [6, 0, 8, 2, 5]
+
+
+Example 68
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 9, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 9, 3]
+
+
+Example 69
+Error in processing LLM response: Expecting value: line 2 column 43 (char 44). Returning all documents by default.
+Example 70
+Sorted Documents: [4, 1, 8, 6, 3, 9, 5, 0, 7, 2]
+Removed Distracting Documents: [4, 1, 8, 6, 3, 9]
+Final Improved Documents: [5, 0, 7, 2]
+
+
+Example 71
+Sorted Documents: [7, 3, 1, 5, 6, 4, 0, 9, 2, 8]
+Removed Distracting Documents: [7, 3, 1, 5, 6]
+Final Improved Documents: [4, 0, 9, 2, 8]
+
+
+Example 72
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 9, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 9, 8, 3]
+
+
+Example 73
+Sorted Documents: [4, 6, 0, 9, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 9, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 74
+Sorted Documents: [2, 8, 4, 0, 6, 3, 9, 5, 1, 7]
+Removed Distracting Documents: [2, 8, 4, 0, 6, 3]
+Final Improved Documents: [9, 5, 1, 7]
+
+
+Example 75
+Sorted Documents: [4, 5, 0, 7, 2, 9, 6, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2, 9]
+Final Improved Documents: [6, 1, 8, 3]
+
+
+Example 76
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 9, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 9, 3]
+
+
+Example 77
+Sorted Documents: [4, 6, 0, 9, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 9, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 78
+Sorted Documents: [7, 5, 1, 3, 4, 2, 0, 9, 6, 8]
+Removed Distracting Documents: [7, 5, 1, 3, 4]
+Final Improved Documents: [2, 0, 9, 6, 8]
+
+
+Example 79
+Sorted Documents: [4, 5, 0, 8, 6, 2, 7, 1, 9, 3]
+Removed Distracting Documents: [4, 5, 0, 8, 6, 2]
+Final Improved Documents: [7, 1, 9, 3]
+
+
+Example 80
+Sorted Documents: [4, 6, 0, 8, 2, 9, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2, 9]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 81
+Sorted Documents: [4, 5, 0, 6, 2, 9, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2, 9]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 82
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 83
+Sorted Documents: [4, 5, 0, 6, 2, 9, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2, 9]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 84
+Sorted Documents: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Removed Distracting Documents: []
+Final Improved Documents: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+Example 85
+Sorted Documents: [4, 0, 7, 2, 9, 6, 1, 8, 5, 3]
+Removed Distracting Documents: [4, 0, 7, 2, 9]
+Final Improved Documents: [6, 1, 8, 5, 3]
+
+
+Example 86
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 87
+Sorted Documents: [8, 7, 0, 5, 2, 4, 1, 9, 3, 6]
+Removed Distracting Documents: [8, 7, 0, 5, 2]
+Final Improved Documents: [4, 1, 9, 3, 6]
+
+
+Example 88
+Sorted Documents: [7, 3, 1, 5, 8, 4, 0, 9, 2, 6]
+Removed Distracting Documents: [7, 3, 1, 5, 8]
+Final Improved Documents: [4, 0, 9, 2, 6]
+
+
+Example 89
+Warning: No valid JSON found in LLM response.
+{
+            "index": 1,
+            "score": 0.7
+         },
+         {
+            "index": 2,
+            "score": 0.3
+         },
+         {
+            "index": 3,
+            "score": 0.8
+         },
+         {
+            "index": 4,
+            "score": 0.4
+         },
+         {
+            "index": 5,
+            "score": 0.6
+         },
+         {
+            "index": 6,
+            "score": 0.5
+         },
+         {
+            "index": 7,
+            "score": 0.2
+         },
+         {
+            "index": 8,
+            "score": 0.1
+         },
+         {
+            "index": 9,
+            "score": 0.9
+         },
+         {
+            "index": 10,
+            "score": 0.3
+         }
+
+Explanation:
+
+* Each document is assigned a score between 0 and 1, indicating the likelihood that the document is a distracting document for the given query. A score of 0 indicates a very high likelihood that the document is a distracting document,
+Example 90
+Sorted Documents: [4, 6, 0, 9, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 9, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 91
+Sorted Documents: [7, 3, 1, 5, 6, 4, 0, 9, 2, 8]
+Removed Distracting Documents: [7, 3, 1, 5, 6]
+Final Improved Documents: [4, 0, 9, 2, 8]
+
+
+Example 92
+Sorted Documents: [9, 7, 2, 6, 1, 4, 5, 0, 3, 8]
+Removed Distracting Documents: [9, 7, 2, 6]
+Final Improved Documents: [1, 4, 5, 0, 3, 8]
+
+
+Example 93
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 9, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 9, 3]
+
+
+Example 94
+Sorted Documents: [8, 9, 6, 0, 1, 3, 4, 5, 7, 2]
+Removed Distracting Documents: [8, 9, 6]
+Final Improved Documents: [0, 1, 3, 4, 5, 7, 2]
+
+
+Example 95
+Sorted Documents: [7, 3, 1, 5, 6, 4, 0, 9, 2, 8]
+Removed Distracting Documents: [7, 3, 1, 5, 6]
+Final Improved Documents: [4, 0, 9, 2, 8]
+
+
+Example 96
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 97
+Sorted Documents: [4, 5, 0, 6, 2, 9, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2, 9]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 98
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 9, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 9, 3]
+
+
+Example 99
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 9, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 9, 3]
+
+
+Example 100
+Sorted Documents: [4, 5, 0, 6, 2, 9, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2, 9]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 101
+Sorted Documents: [9, 4, 0, 7, 2, 6, 1, 8, 5, 3]
+Removed Distracting Documents: [9, 4, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 5, 3]
+
+
+Example 102
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 103
+Sorted Documents: [0, 4, 8, 2, 6, 1, 5, 9, 3, 7]
+Removed Distracting Documents: [0, 4, 8, 2, 6]
+Final Improved Documents: [1, 5, 9, 3, 7]
+
+
+Example 104
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 105
+Sorted Documents: [8, 4, 0, 6, 2, 5, 1, 9, 3, 7]
+Removed Distracting Documents: [8, 4, 0, 6, 2]
+Final Improved Documents: [5, 1, 9, 3, 7]
+
+
+Example 106
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 107
+Sorted Documents: [4, 9, 5, 0, 7, 2, 6, 1, 8, 3]
+Removed Distracting Documents: [4, 9, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 3]
+
+
+Example 108
+Sorted Documents: [4, 5, 0, 6, 2, 7, 1, 9, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2]
+Final Improved Documents: [7, 1, 9, 8, 3]
+
+
+Example 109
+Sorted Documents: [6, 0, 8, 3, 9, 1, 5, 2, 7, 4]
+Removed Distracting Documents: [6, 0, 8, 3, 9]
+Final Improved Documents: [1, 5, 2, 7, 4]
+
+
+Example 110
+Sorted Documents: [4, 0, 7, 2, 9, 6, 1, 8, 3, 5]
+Removed Distracting Documents: [4, 0, 7, 2]
+Final Improved Documents: [9, 6, 1, 8, 3, 5]
+
+
+Example 111
+Sorted Documents: [2, 5, 0, 7, 4, 9, 8, 1, 6, 3]
+Removed Distracting Documents: [2, 5, 0, 7, 4, 9]
+Final Improved Documents: [8, 1, 6, 3]
+
+
+Example 112
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 113
+Sorted Documents: [8, 3, 1, 6, 7, 5, 0, 9, 2, 4]
+Removed Distracting Documents: [8, 3, 1, 6, 7]
+Final Improved Documents: [5, 0, 9, 2, 4]
+
+
+Example 114
+Sorted Documents: [4, 6, 0, 9, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 9, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 115
+Sorted Documents: [3, 0, 5, 9, 4, 8, 1, 6, 2, 7]
+Removed Distracting Documents: [3, 0, 5, 9, 4, 8]
+Final Improved Documents: [1, 6, 2, 7]
+
+
+Example 116
+Sorted Documents: [4, 1, 7, 3, 9, 6, 0, 8, 2, 5]
+Removed Distracting Documents: [4, 1, 7, 3, 9]
+Final Improved Documents: [6, 0, 8, 2, 5]
+
+
+Example 117
+Sorted Documents: [0, 9, 6, 2, 8, 4, 1, 7, 3, 5]
+Removed Distracting Documents: [0, 9, 6, 2, 8]
+Final Improved Documents: [4, 1, 7, 3, 5]
+
+
+Example 118
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 9, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 9, 8, 3]
+
+
+Example 119
+Sorted Documents: [4, 6, 0, 9, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 9, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 120
+Sorted Documents: [4, 6, 0, 2, 9, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2, 9]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 121
+Sorted Documents: [8, 4, 1, 6, 3, 7, 0, 9, 2, 5]
+Removed Distracting Documents: [8, 4, 1, 6, 3]
+Final Improved Documents: [7, 0, 9, 2, 5]
+
+
+Example 122
+Sorted Documents: [7, 1, 5, 2, 8, 9, 4, 3, 0, 6]
+Removed Distracting Documents: [7, 1, 5, 2]
+Final Improved Documents: [8, 9, 4, 3, 0, 6]
+
+
+Example 123
+Sorted Documents: [6, 4, 0, 8, 2, 9, 1, 7, 3, 5]
+Removed Distracting Documents: [6, 4, 0, 8, 2]
+Final Improved Documents: [9, 1, 7, 3, 5]
+
+
+Example 124
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 125
+Sorted Documents: [7, 3, 1, 5, 8, 4, 0, 9, 2, 6]
+Removed Distracting Documents: [7, 3, 1, 5, 8]
+Final Improved Documents: [4, 0, 9, 2, 6]
+
+
+Example 126
+Sorted Documents: [9, 4, 0, 6, 2, 7, 1, 8, 3, 5]
+Removed Distracting Documents: [9, 4, 0, 6, 2]
+Final Improved Documents: [7, 1, 8, 3, 5]
+
+
+Example 127
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 9, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 9, 3]
+
+
+Example 128
+Sorted Documents: [4, 6, 0, 9, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 9, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 129
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 8, 9, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 8, 9, 3]
+
+
+Example 130
+Sorted Documents: [4, 0, 8, 2, 9, 6, 1, 7, 3, 5]
+Removed Distracting Documents: [4, 0, 8, 2, 9]
+Final Improved Documents: [6, 1, 7, 3, 5]
+
+
+Example 131
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 132
+Sorted Documents: [8, 7, 1, 3, 4, 9, 2, 0, 5, 6]
+Removed Distracting Documents: [8, 7, 1, 3, 4, 9]
+Final Improved Documents: [2, 0, 5, 6]
+
+
+Example 133
+Sorted Documents: [4, 0, 7, 2, 9, 6, 1, 8, 3, 5]
+Removed Distracting Documents: [4, 0, 7, 2, 9]
+Final Improved Documents: [6, 1, 8, 3, 5]
+
+
+Example 134
+Sorted Documents: [8, 7, 1, 3, 4, 9, 2, 0, 5, 6]
+Removed Distracting Documents: [8, 7, 1, 3, 4, 9]
+Final Improved Documents: [2, 0, 5, 6]
+
+
+Example 135
+Sorted Documents: [4, 6, 0, 9, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 9, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 136
+Sorted Documents: [4, 6, 0, 9, 2, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 9, 2]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 137
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 138
+Sorted Documents: [4, 5, 0, 6, 2, 9, 7, 1, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 6, 2, 9]
+Final Improved Documents: [7, 1, 8, 3]
+
+
+Example 139
+Sorted Documents: [7, 3, 1, 5, 6, 4, 0, 9, 2, 8]
+Removed Distracting Documents: [7, 3, 1, 5, 6]
+Final Improved Documents: [4, 0, 9, 2, 8]
+
+
+Example 140
+Sorted Documents: [6, 9, 4, 1, 3, 7, 2, 0, 5, 8]
+Removed Distracting Documents: [6, 9, 4, 1, 3, 7]
+Final Improved Documents: [2, 0, 5, 8]
+
+
+Example 141
+Sorted Documents: [4, 6, 0, 2, 9, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2]
+Final Improved Documents: [9, 8, 1, 7, 5, 3]
+
+
+Example 142
+Sorted Documents: [8, 4, 1, 7, 3, 6, 0, 9, 2, 5]
+Removed Distracting Documents: [8, 4, 1, 7, 3]
+Final Improved Documents: [6, 0, 9, 2, 5]
+
+
+Example 143
+Sorted Documents: [7, 5, 1, 3, 4, 9, 2, 0, 6, 8]
+Removed Distracting Documents: [7, 5, 1, 3, 4]
+Final Improved Documents: [9, 2, 0, 6, 8]
+
+
+Example 144
+Sorted Documents: [2, 0, 4, 6, 3, 9, 1, 8, 7, 5]
+Removed Distracting Documents: [2, 0, 4, 6]
+Final Improved Documents: [3, 9, 1, 8, 7, 5]
+
+
+Example 145
+Sorted Documents: [4, 6, 0, 2, 9, 8, 1, 7, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 2, 9]
+Final Improved Documents: [8, 1, 7, 5, 3]
+
+
+Example 146
+Sorted Documents: [4, 6, 0, 8, 2, 9, 7, 1, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2, 9]
+Final Improved Documents: [7, 1, 5, 3]
+
+
+Example 147
+Sorted Documents: [8, 4, 0, 6, 2, 5, 1, 9, 7, 3]
+Removed Distracting Documents: [8, 4, 0, 6, 2]
+Final Improved Documents: [5, 1, 9, 7, 3]
+
+
+Example 148
+Sorted Documents: [3, 1, 8, 5, 6, 9, 4, 0, 7, 2]
+Removed Distracting Documents: [3, 1, 8, 5, 6, 9]
+Final Improved Documents: [4, 0, 7, 2]
+
+
+Example 149
+Sorted Documents: [4, 5, 0, 7, 2, 6, 1, 9, 8, 3]
+Removed Distracting Documents: [4, 5, 0, 7, 2]
+Final Improved Documents: [6, 1, 9, 8, 3]
+
+
+Example 150
+Sorted Documents: [4, 1, 7, 3, 9, 6, 0, 8, 2, 5]
+Removed Distracting Documents: [4, 1, 7, 3]
+Final Improved Documents: [9, 6, 0, 8, 2, 5]
+
+
+Example 151
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+Example 152
+Error in processing LLM response: Expecting value: line 2 column 43 (char 44). Returning all documents by default.
+Example 153
+Sorted Documents: [4, 6, 0, 8, 2, 7, 1, 9, 5, 3]
+Removed Distracting Documents: [4, 6, 0, 8, 2]
+Final Improved Documents: [7, 1, 9, 5, 3]
+
+
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 4
+NUM DOCUMENTS IN CONTEXT: 10
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:01<00:15,  1.97s/it] 22%|██▏       | 2/9 [00:04<00:14,  2.10s/it] 33%|███▎      | 3/9 [00:06<00:13,  2.19s/it] 44%|████▍     | 4/9 [00:08<00:10,  2.16s/it] 56%|█████▌    | 5/9 [00:10<00:08,  2.25s/it] 67%|██████▋   | 6/9 [00:12<00:06,  2.03s/it] 78%|███████▊  | 7/9 [00:14<00:03,  1.86s/it] 89%|████████▉ | 8/9 [00:15<00:01,  1.76s/it]100%|██████████| 9/9 [00:17<00:00,  1.65s/it]100%|██████████| 9/9 [00:17<00:00,  1.90s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+time used:  1109.3008844852448

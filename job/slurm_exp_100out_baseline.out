@@ -1,0 +1,549 @@
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.41s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.53s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.66s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 1
+NUM DOCUMENTS IN CONTEXT: 3
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:05<00:40,  5.05s/it] 22%|██▏       | 2/9 [00:09<00:33,  4.85s/it] 33%|███▎      | 3/9 [00:14<00:29,  4.87s/it] 44%|████▍     | 4/9 [00:20<00:25,  5.13s/it] 56%|█████▌    | 5/9 [00:25<00:20,  5.20s/it] 67%|██████▋   | 6/9 [00:29<00:14,  4.85s/it] 78%|███████▊  | 7/9 [00:34<00:09,  4.85s/it] 89%|████████▉ | 8/9 [00:38<00:04,  4.67s/it]100%|██████████| 9/9 [00:42<00:00,  4.49s/it]100%|██████████| 9/9 [00:42<00:00,  4.77s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.01s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.04s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 2
+NUM DOCUMENTS IN CONTEXT: 4
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:07<01:00,  7.56s/it] 22%|██▏       | 2/9 [00:12<00:43,  6.18s/it] 33%|███▎      | 3/9 [00:18<00:34,  5.78s/it] 44%|████▍     | 4/9 [00:24<00:29,  5.90s/it] 56%|█████▌    | 5/9 [00:30<00:23,  5.88s/it] 67%|██████▋   | 6/9 [00:34<00:15,  5.25s/it] 78%|███████▊  | 7/9 [00:38<00:09,  4.97s/it] 89%|████████▉ | 8/9 [00:43<00:05,  5.01s/it]100%|██████████| 9/9 [00:47<00:00,  4.71s/it]100%|██████████| 9/9 [00:47<00:00,  5.29s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.06s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.84s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.02s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 2
+NUM DOCUMENTS IN CONTEXT: 5
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:08<01:04,  8.02s/it] 22%|██▏       | 2/9 [00:13<00:46,  6.65s/it] 33%|███▎      | 3/9 [00:18<00:34,  5.78s/it] 44%|████▍     | 4/9 [00:25<00:30,  6.11s/it] 56%|█████▌    | 5/9 [00:31<00:24,  6.19s/it] 67%|██████▋   | 6/9 [00:37<00:18,  6.04s/it] 78%|███████▊  | 7/9 [00:41<00:11,  5.52s/it] 89%|████████▉ | 8/9 [00:48<00:05,  5.87s/it]100%|██████████| 9/9 [00:50<00:00,  4.81s/it]100%|██████████| 9/9 [00:50<00:00,  5.64s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.60s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.61s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.76s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 3
+NUM DOCUMENTS IN CONTEXT: 6
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:08<01:07,  8.48s/it] 22%|██▏       | 2/9 [00:15<00:53,  7.57s/it] 33%|███▎      | 3/9 [00:19<00:35,  5.91s/it] 44%|████▍     | 4/9 [00:26<00:31,  6.25s/it] 56%|█████▌    | 5/9 [00:32<00:25,  6.45s/it] 67%|██████▋   | 6/9 [00:39<00:19,  6.39s/it] 78%|███████▊  | 7/9 [00:46<00:13,  6.53s/it] 89%|████████▉ | 8/9 [00:53<00:06,  6.73s/it]100%|██████████| 9/9 [00:56<00:00,  5.69s/it]100%|██████████| 9/9 [00:56<00:00,  6.29s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.65s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.67s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.82s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 3
+NUM DOCUMENTS IN CONTEXT: 7
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:08<01:10,  8.87s/it] 22%|██▏       | 2/9 [00:16<00:55,  7.99s/it] 33%|███▎      | 3/9 [00:22<00:43,  7.29s/it] 44%|████▍     | 4/9 [00:30<00:37,  7.45s/it] 56%|█████▌    | 5/9 [00:37<00:29,  7.32s/it] 67%|██████▋   | 6/9 [00:44<00:21,  7.15s/it] 78%|███████▊  | 7/9 [00:51<00:14,  7.21s/it] 89%|████████▉ | 8/9 [00:59<00:07,  7.35s/it]100%|██████████| 9/9 [01:02<00:00,  6.07s/it]100%|██████████| 9/9 [01:02<00:00,  6.95s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.04s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 4
+NUM DOCUMENTS IN CONTEXT: 8
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:09<01:13,  9.20s/it] 22%|██▏       | 2/9 [00:17<00:59,  8.43s/it] 33%|███▎      | 3/9 [00:24<00:47,  7.98s/it] 44%|████▍     | 4/9 [00:32<00:40,  8.09s/it] 56%|█████▌    | 5/9 [00:40<00:32,  8.06s/it] 67%|██████▋   | 6/9 [00:47<00:22,  7.46s/it] 78%|███████▊  | 7/9 [00:53<00:14,  7.20s/it] 89%|████████▉ | 8/9 [01:01<00:07,  7.49s/it]100%|██████████| 9/9 [01:05<00:00,  6.23s/it]100%|██████████| 9/9 [01:05<00:00,  7.26s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.69s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.66s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.81s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 4
+NUM DOCUMENTS IN CONTEXT: 9
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:09<01:16,  9.62s/it] 22%|██▏       | 2/9 [00:17<01:00,  8.70s/it] 33%|███▎      | 3/9 [00:24<00:47,  7.94s/it] 44%|████▍     | 4/9 [00:29<00:33,  6.65s/it] 56%|█████▌    | 5/9 [00:37<00:29,  7.32s/it] 67%|██████▋   | 6/9 [00:46<00:22,  7.61s/it] 78%|███████▊  | 7/9 [00:54<00:15,  7.88s/it] 89%|████████▉ | 8/9 [01:02<00:07,  7.84s/it]100%|██████████| 9/9 [01:06<00:00,  6.57s/it]100%|██████████| 9/9 [01:06<00:00,  7.34s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.54s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.59s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.74s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 5
+NUM DOCUMENTS IN CONTEXT: 10
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:06<00:55,  6.90s/it] 22%|██▏       | 2/9 [00:11<00:39,  5.71s/it] 33%|███▎      | 3/9 [00:15<00:29,  4.90s/it] 44%|████▍     | 4/9 [00:25<00:33,  6.67s/it] 56%|█████▌    | 5/9 [00:32<00:27,  7.00s/it] 67%|██████▋   | 6/9 [00:38<00:19,  6.56s/it] 78%|███████▊  | 7/9 [00:47<00:14,  7.36s/it] 89%|████████▉ | 8/9 [00:53<00:06,  6.87s/it]100%|██████████| 9/9 [00:57<00:00,  5.96s/it]100%|██████████| 9/9 [00:57<00:00,  6.36s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.64s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.67s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.81s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 5
+NUM DOCUMENTS IN CONTEXT: 11
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:10<01:25, 10.68s/it] 22%|██▏       | 2/9 [00:20<01:09,  9.90s/it] 33%|███▎      | 3/9 [00:27<00:53,  8.84s/it] 44%|████▍     | 4/9 [00:37<00:46,  9.23s/it] 56%|█████▌    | 5/9 [00:46<00:37,  9.32s/it] 67%|██████▋   | 6/9 [00:53<00:25,  8.53s/it] 78%|███████▊  | 7/9 [01:01<00:16,  8.29s/it] 89%|████████▉ | 8/9 [01:08<00:07,  7.96s/it]100%|██████████| 9/9 [01:13<00:00,  7.01s/it]100%|██████████| 9/9 [01:13<00:00,  8.21s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+usage: generate_answers_llm.py [-h] [--output_dir OUTPUT_DIR]
+                               [--llm_id LLM_ID]
+                               [--model_max_length MODEL_MAX_LENGTH]
+                               [--load_full_corpus LOAD_FULL_CORPUS]
+                               [--use_random USE_RANDOM]
+                               [--use_adore USE_ADORE]
+                               [--gold_position GOLD_POSITION]
+                               [--num_documents_in_context NUM_DOCUMENTS_IN_CONTEXT]
+                               [--get_documents_without_answer GET_DOCUMENTS_WITHOUT_ANSWER]
+                               [--max_new_tokens MAX_NEW_TOKENS]
+                               [--batch_size BATCH_SIZE]
+                               [--save_every SAVE_EVERY]
+                               [--max_dataset_size MAX_DATASET_SIZE]
+                               [--cot COT] [--seed SEED]
+generate_answers_llm.py: error: unrecognized arguments: --filtering_threshold 0
+usage: generate_answers_llm.py [-h] [--output_dir OUTPUT_DIR]
+                               [--llm_id LLM_ID]
+                               [--model_max_length MODEL_MAX_LENGTH]
+                               [--load_full_corpus LOAD_FULL_CORPUS]
+                               [--use_random USE_RANDOM]
+                               [--use_adore USE_ADORE]
+                               [--gold_position GOLD_POSITION]
+                               [--num_documents_in_context NUM_DOCUMENTS_IN_CONTEXT]
+                               [--get_documents_without_answer GET_DOCUMENTS_WITHOUT_ANSWER]
+                               [--max_new_tokens MAX_NEW_TOKENS]
+                               [--batch_size BATCH_SIZE]
+                               [--save_every SAVE_EVERY]
+                               [--max_dataset_size MAX_DATASET_SIZE]
+                               [--cot COT] [--seed SEED]
+generate_answers_llm.py: error: unrecognized arguments: --filtering_threshold 0.1
+usage: generate_answers_llm.py [-h] [--output_dir OUTPUT_DIR]
+                               [--llm_id LLM_ID]
+                               [--model_max_length MODEL_MAX_LENGTH]
+                               [--load_full_corpus LOAD_FULL_CORPUS]
+                               [--use_random USE_RANDOM]
+                               [--use_adore USE_ADORE]
+                               [--gold_position GOLD_POSITION]
+                               [--num_documents_in_context NUM_DOCUMENTS_IN_CONTEXT]
+                               [--get_documents_without_answer GET_DOCUMENTS_WITHOUT_ANSWER]
+                               [--max_new_tokens MAX_NEW_TOKENS]
+                               [--batch_size BATCH_SIZE]
+                               [--save_every SAVE_EVERY]
+                               [--max_dataset_size MAX_DATASET_SIZE]
+                               [--cot COT] [--seed SEED]
+generate_answers_llm.py: error: unrecognized arguments: --filtering_threshold 0.2
+usage: generate_answers_llm.py [-h] [--output_dir OUTPUT_DIR]
+                               [--llm_id LLM_ID]
+                               [--model_max_length MODEL_MAX_LENGTH]
+                               [--load_full_corpus LOAD_FULL_CORPUS]
+                               [--use_random USE_RANDOM]
+                               [--use_adore USE_ADORE]
+                               [--gold_position GOLD_POSITION]
+                               [--num_documents_in_context NUM_DOCUMENTS_IN_CONTEXT]
+                               [--get_documents_without_answer GET_DOCUMENTS_WITHOUT_ANSWER]
+                               [--max_new_tokens MAX_NEW_TOKENS]
+                               [--batch_size BATCH_SIZE]
+                               [--save_every SAVE_EVERY]
+                               [--max_dataset_size MAX_DATASET_SIZE]
+                               [--cot COT] [--seed SEED]
+generate_answers_llm.py: error: unrecognized arguments: --filtering_threshold 0.3
+usage: generate_answers_llm.py [-h] [--output_dir OUTPUT_DIR]
+                               [--llm_id LLM_ID]
+                               [--model_max_length MODEL_MAX_LENGTH]
+                               [--load_full_corpus LOAD_FULL_CORPUS]
+                               [--use_random USE_RANDOM]
+                               [--use_adore USE_ADORE]
+                               [--gold_position GOLD_POSITION]
+                               [--num_documents_in_context NUM_DOCUMENTS_IN_CONTEXT]
+                               [--get_documents_without_answer GET_DOCUMENTS_WITHOUT_ANSWER]
+                               [--max_new_tokens MAX_NEW_TOKENS]
+                               [--batch_size BATCH_SIZE]
+                               [--save_every SAVE_EVERY]
+                               [--max_dataset_size MAX_DATASET_SIZE]
+                               [--cot COT] [--seed SEED]
+generate_answers_llm.py: error: unrecognized arguments: --filtering_threshold 0.4
+usage: generate_answers_llm.py [-h] [--output_dir OUTPUT_DIR]
+                               [--llm_id LLM_ID]
+                               [--model_max_length MODEL_MAX_LENGTH]
+                               [--load_full_corpus LOAD_FULL_CORPUS]
+                               [--use_random USE_RANDOM]
+                               [--use_adore USE_ADORE]
+                               [--gold_position GOLD_POSITION]
+                               [--num_documents_in_context NUM_DOCUMENTS_IN_CONTEXT]
+                               [--get_documents_without_answer GET_DOCUMENTS_WITHOUT_ANSWER]
+                               [--max_new_tokens MAX_NEW_TOKENS]
+                               [--batch_size BATCH_SIZE]
+                               [--save_every SAVE_EVERY]
+                               [--max_dataset_size MAX_DATASET_SIZE]
+                               [--cot COT] [--seed SEED]
+generate_answers_llm.py: error: unrecognized arguments: --filtering_threshold 0.5
+usage: generate_answers_llm.py [-h] [--output_dir OUTPUT_DIR]
+                               [--llm_id LLM_ID]
+                               [--model_max_length MODEL_MAX_LENGTH]
+                               [--load_full_corpus LOAD_FULL_CORPUS]
+                               [--use_random USE_RANDOM]
+                               [--use_adore USE_ADORE]
+                               [--gold_position GOLD_POSITION]
+                               [--num_documents_in_context NUM_DOCUMENTS_IN_CONTEXT]
+                               [--get_documents_without_answer GET_DOCUMENTS_WITHOUT_ANSWER]
+                               [--max_new_tokens MAX_NEW_TOKENS]
+                               [--batch_size BATCH_SIZE]
+                               [--save_every SAVE_EVERY]
+                               [--max_dataset_size MAX_DATASET_SIZE]
+                               [--cot COT] [--seed SEED]
+generate_answers_llm.py: error: unrecognized arguments: --filtering_threshold 0.6
+usage: generate_answers_llm.py [-h] [--output_dir OUTPUT_DIR]
+                               [--llm_id LLM_ID]
+                               [--model_max_length MODEL_MAX_LENGTH]
+                               [--load_full_corpus LOAD_FULL_CORPUS]
+                               [--use_random USE_RANDOM]
+                               [--use_adore USE_ADORE]
+                               [--gold_position GOLD_POSITION]
+                               [--num_documents_in_context NUM_DOCUMENTS_IN_CONTEXT]
+                               [--get_documents_without_answer GET_DOCUMENTS_WITHOUT_ANSWER]
+                               [--max_new_tokens MAX_NEW_TOKENS]
+                               [--batch_size BATCH_SIZE]
+                               [--save_every SAVE_EVERY]
+                               [--max_dataset_size MAX_DATASET_SIZE]
+                               [--cot COT] [--seed SEED]
+generate_answers_llm.py: error: unrecognized arguments: --filtering_threshold 0.7
+usage: generate_answers_llm.py [-h] [--output_dir OUTPUT_DIR]
+                               [--llm_id LLM_ID]
+                               [--model_max_length MODEL_MAX_LENGTH]
+                               [--load_full_corpus LOAD_FULL_CORPUS]
+                               [--use_random USE_RANDOM]
+                               [--use_adore USE_ADORE]
+                               [--gold_position GOLD_POSITION]
+                               [--num_documents_in_context NUM_DOCUMENTS_IN_CONTEXT]
+                               [--get_documents_without_answer GET_DOCUMENTS_WITHOUT_ANSWER]
+                               [--max_new_tokens MAX_NEW_TOKENS]
+                               [--batch_size BATCH_SIZE]
+                               [--save_every SAVE_EVERY]
+                               [--max_dataset_size MAX_DATASET_SIZE]
+                               [--cot COT] [--seed SEED]
+generate_answers_llm.py: error: unrecognized arguments: --filtering_threshold 0.8
+usage: generate_answers_llm.py [-h] [--output_dir OUTPUT_DIR]
+                               [--llm_id LLM_ID]
+                               [--model_max_length MODEL_MAX_LENGTH]
+                               [--load_full_corpus LOAD_FULL_CORPUS]
+                               [--use_random USE_RANDOM]
+                               [--use_adore USE_ADORE]
+                               [--gold_position GOLD_POSITION]
+                               [--num_documents_in_context NUM_DOCUMENTS_IN_CONTEXT]
+                               [--get_documents_without_answer GET_DOCUMENTS_WITHOUT_ANSWER]
+                               [--max_new_tokens MAX_NEW_TOKENS]
+                               [--batch_size BATCH_SIZE]
+                               [--save_every SAVE_EVERY]
+                               [--max_dataset_size MAX_DATASET_SIZE]
+                               [--cot COT] [--seed SEED]
+generate_answers_llm.py: error: unrecognized arguments: --filtering_threshold 0.9
+usage: generate_answers_llm.py [-h] [--output_dir OUTPUT_DIR]
+                               [--llm_id LLM_ID]
+                               [--model_max_length MODEL_MAX_LENGTH]
+                               [--load_full_corpus LOAD_FULL_CORPUS]
+                               [--use_random USE_RANDOM]
+                               [--use_adore USE_ADORE]
+                               [--gold_position GOLD_POSITION]
+                               [--num_documents_in_context NUM_DOCUMENTS_IN_CONTEXT]
+                               [--get_documents_without_answer GET_DOCUMENTS_WITHOUT_ANSWER]
+                               [--max_new_tokens MAX_NEW_TOKENS]
+                               [--batch_size BATCH_SIZE]
+                               [--save_every SAVE_EVERY]
+                               [--max_dataset_size MAX_DATASET_SIZE]
+                               [--cot COT] [--seed SEED]
+generate_answers_llm.py: error: unrecognized arguments: --filtering_threshold 1.0
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.65s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.64s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.79s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 0
+NUM DOCUMENTS IN CONTEXT: 7
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:08<01:09,  8.74s/it] 22%|██▏       | 2/9 [00:15<00:54,  7.83s/it] 33%|███▎      | 3/9 [00:22<00:44,  7.42s/it] 44%|████▍     | 4/9 [00:30<00:37,  7.52s/it] 56%|█████▌    | 5/9 [00:37<00:29,  7.46s/it] 67%|██████▋   | 6/9 [00:44<00:21,  7.33s/it] 78%|███████▊  | 7/9 [00:52<00:14,  7.31s/it] 89%|████████▉ | 8/9 [00:59<00:07,  7.41s/it]100%|██████████| 9/9 [01:05<00:00,  6.71s/it]100%|██████████| 9/9 [01:05<00:00,  7.23s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.63s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.63s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.78s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 1
+NUM DOCUMENTS IN CONTEXT: 7
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:08<01:10,  8.85s/it] 22%|██▏       | 2/9 [00:16<00:55,  7.97s/it] 33%|███▎      | 3/9 [00:21<00:40,  6.69s/it] 44%|████▍     | 4/9 [00:27<00:33,  6.66s/it] 56%|█████▌    | 5/9 [00:34<00:26,  6.71s/it] 67%|██████▋   | 6/9 [00:41<00:20,  6.85s/it] 78%|███████▊  | 7/9 [00:49<00:14,  7.02s/it] 89%|████████▉ | 8/9 [00:56<00:07,  7.22s/it]100%|██████████| 9/9 [01:00<00:00,  6.01s/it]100%|██████████| 9/9 [01:00<00:00,  6.70s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.54s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.61s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.75s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 2
+NUM DOCUMENTS IN CONTEXT: 7
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:08<01:09,  8.73s/it] 22%|██▏       | 2/9 [00:16<00:55,  7.91s/it] 33%|███▎      | 3/9 [00:22<00:43,  7.24s/it] 44%|████▍     | 4/9 [00:30<00:37,  7.41s/it] 56%|█████▌    | 5/9 [00:37<00:29,  7.39s/it] 67%|██████▋   | 6/9 [00:44<00:21,  7.28s/it] 78%|███████▊  | 7/9 [00:50<00:13,  6.97s/it] 89%|████████▉ | 8/9 [00:58<00:07,  7.17s/it]100%|██████████| 9/9 [01:01<00:00,  5.94s/it]100%|██████████| 9/9 [01:01<00:00,  6.87s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.62s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.63s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.78s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 3
+NUM DOCUMENTS IN CONTEXT: 7
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:08<01:10,  8.77s/it] 22%|██▏       | 2/9 [00:16<00:55,  7.94s/it] 33%|███▎      | 3/9 [00:22<00:43,  7.26s/it] 44%|████▍     | 4/9 [00:30<00:37,  7.46s/it] 56%|█████▌    | 5/9 [00:37<00:29,  7.33s/it] 67%|██████▋   | 6/9 [00:44<00:21,  7.15s/it] 78%|███████▊  | 7/9 [00:51<00:14,  7.22s/it] 89%|████████▉ | 8/9 [00:59<00:07,  7.35s/it]100%|██████████| 9/9 [01:02<00:00,  6.07s/it]100%|██████████| 9/9 [01:02<00:00,  6.95s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.56s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.60s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.75s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 4
+NUM DOCUMENTS IN CONTEXT: 7
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:05<00:47,  6.00s/it] 22%|██▏       | 2/9 [00:13<00:47,  6.74s/it] 33%|███▎      | 3/9 [00:17<00:32,  5.37s/it] 44%|████▍     | 4/9 [00:23<00:29,  5.83s/it] 56%|█████▌    | 5/9 [00:30<00:24,  6.17s/it] 67%|██████▋   | 6/9 [00:37<00:19,  6.48s/it] 78%|███████▊  | 7/9 [00:43<00:12,  6.40s/it] 89%|████████▉ | 8/9 [00:48<00:05,  5.86s/it]100%|██████████| 9/9 [00:51<00:00,  5.04s/it]100%|██████████| 9/9 [00:51<00:00,  5.74s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.57s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.57s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.72s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 5
+NUM DOCUMENTS IN CONTEXT: 7
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:05<00:47,  5.91s/it] 22%|██▏       | 2/9 [00:09<00:32,  4.69s/it] 33%|███▎      | 3/9 [00:13<00:25,  4.27s/it] 44%|████▍     | 4/9 [00:21<00:28,  5.62s/it] 56%|█████▌    | 5/9 [00:28<00:25,  6.25s/it] 67%|██████▋   | 6/9 [00:35<00:19,  6.42s/it] 78%|███████▊  | 7/9 [00:42<00:13,  6.73s/it] 89%|████████▉ | 8/9 [00:46<00:05,  5.69s/it]100%|██████████| 9/9 [00:49<00:00,  4.87s/it]100%|██████████| 9/9 [00:49<00:00,  5.47s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.44s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.55s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.68s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 6
+NUM DOCUMENTS IN CONTEXT: 7
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:05<00:47,  5.95s/it] 22%|██▏       | 2/9 [00:09<00:30,  4.33s/it] 33%|███▎      | 3/9 [00:13<00:24,  4.13s/it] 44%|████▍     | 4/9 [00:19<00:25,  5.09s/it] 56%|█████▌    | 5/9 [00:26<00:23,  5.92s/it] 67%|██████▋   | 6/9 [00:31<00:16,  5.60s/it] 78%|███████▊  | 7/9 [00:39<00:12,  6.18s/it] 89%|████████▉ | 8/9 [00:43<00:05,  5.47s/it]100%|██████████| 9/9 [00:46<00:00,  4.79s/it]100%|██████████| 9/9 [00:46<00:00,  5.18s/it]
+Saving at 2...
+Saving at 4...
+Saving at 6...
+Saving at 8...
+Saving at 9...

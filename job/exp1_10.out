@@ -1,0 +1,6 @@
+Directory:  data/gen_res/Llama-2-7b-chat-hf/train/improved/contriever/10_doc
+I'm using the following files:  ['numdoc10_gold_at4_answerless_info_2.pkl', 'numdoc10_gold_at4_answerless_info_4.pkl', 'numdoc10_gold_at4_answerless_info_6.pkl', 'numdoc10_gold_at4_answerless_info_8.pkl', 'numdoc10_gold_at4_answerless_info_9.pkl']
+ACCURACY:  0.0714
+Precision: 1.0
+Recall: 0.07142857142857142
+F1 Score: 0.13333333333333333

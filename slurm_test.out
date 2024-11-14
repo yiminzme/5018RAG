@@ -1,0 +1,247 @@
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.61s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.62s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.77s/it]
+LLM loaded
+
+ARGUMENTS:
+output_dir: data/gen_res_cot
+llm_id: meta-llama/Llama-2-7b-chat-hf
+model_max_length: 4096
+load_full_corpus: False
+use_random: False
+use_adore: False
+gold_position: 3
+num_documents_in_context: 7
+get_documents_without_answer: True
+max_new_tokens: 100
+batch_size: 18
+save_every: 2
+cot: True
+max_dataset_size: 2
+filtering_threshold: 0.5
+seed: 10
+
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+Example 0
+Sorted Documents: [4, 0, 2, 5, 1, 6, 3]
+Removed Distracting Documents: [4, 0, 2]
+Final Improved Documents: [5, 1, 6, 3]
+
+
+Example 1
+Sorted Documents: [6, 0, 4, 1, 3, 2, 5]
+Removed Distracting Documents: [6, 0, 4]
+Final Improved Documents: [1, 3, 2, 5]
+
+
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 3
+NUM DOCUMENTS IN CONTEXT: 7
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.05s/it]100%|██████████| 1/1 [00:01<00:00,  1.11s/it]
+Saving at 1...
+time used:  22.35232901573181
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.56s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.58s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.73s/it]
+LLM loaded
+
+ARGUMENTS:
+output_dir: data/gen_res_cot
+llm_id: meta-llama/Llama-2-7b-chat-hf
+model_max_length: 4096
+load_full_corpus: False
+use_random: False
+use_adore: False
+gold_position: 3
+num_documents_in_context: 7
+get_documents_without_answer: True
+max_new_tokens: 100
+batch_size: 18
+save_every: 2
+cot: True
+max_dataset_size: 2
+filtering_threshold: 0.5
+seed: 10
+
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+Example 0
+Sorted Documents: [4, 0, 2, 5, 1, 6, 3]
+Removed Distracting Documents: [4, 0, 2]
+Final Improved Documents: [5, 1, 6, 3]
+
+
+Example 1
+Sorted Documents: [6, 0, 4, 1, 3, 2, 5]
+Removed Distracting Documents: [6, 0, 4]
+Final Improved Documents: [1, 3, 2, 5]
+
+
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 3
+NUM DOCUMENTS IN CONTEXT: 7
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.03it/s]100%|██████████| 1/1 [00:01<00:00,  1.03s/it]
+Saving at 1...
+time used:  21.137295722961426
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.47s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.55s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.69s/it]
+LLM loaded
+
+ARGUMENTS:
+output_dir: data/gen_res_cot
+llm_id: meta-llama/Llama-2-7b-chat-hf
+model_max_length: 4096
+load_full_corpus: False
+use_random: False
+use_adore: False
+gold_position: 3
+num_documents_in_context: 7
+get_documents_without_answer: True
+max_new_tokens: 100
+batch_size: 18
+save_every: 2
+cot: True
+max_dataset_size: 2
+filtering_threshold: 0.5
+seed: 10
+
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+Example 0
+Sorted Documents: [4, 0, 2, 5, 1, 6, 3]
+Removed Distracting Documents: [4, 0, 2]
+Final Improved Documents: [5, 1, 6, 3]
+
+
+Example 1
+Sorted Documents: [6, 0, 4, 1, 3, 2, 5]
+Removed Distracting Documents: [6, 0, 4]
+Final Improved Documents: [1, 3, 2, 5]
+
+
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 3
+NUM DOCUMENTS IN CONTEXT: 7
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:02<00:00,  2.93s/it]100%|██████████| 1/1 [00:02<00:00,  2.98s/it]
+Saving at 1...
+time used:  23.026455879211426
+Traceback (most recent call last):
+  File "/home/xzhengbj/mycode/5018RAG/src/generate_answers_llm_improved.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.34s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.48s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.61s/it]
+LLM loaded
+
+ARGUMENTS:
+output_dir: data/test/gen_res_cot
+llm_id: meta-llama/Llama-2-7b-chat-hf
+model_max_length: 4096
+load_full_corpus: False
+use_random: False
+use_adore: False
+gold_position: 3
+num_documents_in_context: 7
+get_documents_without_answer: True
+max_new_tokens: 100
+batch_size: 18
+save_every: 2
+cot: True
+max_dataset_size: 2
+filtering_threshold: 0.5
+seed: 10
+
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+Example 0
+Sorted Documents: [4, 0, 2, 5, 1, 6, 3]
+Removed Distracting Documents: [4, 0, 2]
+Final Improved Documents: [5, 1, 6, 3]
+
+
+Example 1
+Sorted Documents: [6, 0, 4, 1, 3, 2, 5]
+Removed Distracting Documents: [6, 0, 4]
+Final Improved Documents: [1, 3, 2, 5]
+
+
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 3
+NUM DOCUMENTS IN CONTEXT: 7
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:02<00:00,  2.90s/it]100%|██████████| 1/1 [00:02<00:00,  2.96s/it]
+Saving at 1...
+time used:  23.564062356948853
+usage: generate_answers_llm.py [-h] [--output_dir OUTPUT_DIR]
+                               [--llm_id LLM_ID]
+                               [--model_max_length MODEL_MAX_LENGTH]
+                               [--load_full_corpus LOAD_FULL_CORPUS]
+                               [--use_random USE_RANDOM]
+                               [--use_adore USE_ADORE]
+                               [--gold_position GOLD_POSITION]
+                               [--num_documents_in_context NUM_DOCUMENTS_IN_CONTEXT]
+                               [--get_documents_without_answer GET_DOCUMENTS_WITHOUT_ANSWER]
+                               [--max_new_tokens MAX_NEW_TOKENS]
+                               [--batch_size BATCH_SIZE]
+                               [--save_every SAVE_EVERY]
+                               [--max_dataset_size MAX_DATASET_SIZE]
+                               [--seed SEED]
+generate_answers_llm.py: error: unrecognized arguments: --cot True
+Loading LLM...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.54s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.55s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.70s/it]
+LLM loaded
+Loading corpus and search results...
+Corpus and search results loaded
+Loading prompt dataset...
+stop
+Prompt dataset loaded
+INFO:
+DATA: data/10k_train_dataset.json
+MODEL: meta-llama/Llama-2-7b-chat-hf
+USE RANDOM IN CONTEXT: False
+USE ADORE: False
+GOLD POSITION: 3
+NUM DOCUMENTS IN CONTEXT: 7
+DOCUMENTS WITHOUT ANSWER: True
+BATCH SIZE: 18
+SAVE EVERY: 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.02s/it]100%|██████████| 1/1 [00:04<00:00,  4.07s/it]
+Saving at 1...
