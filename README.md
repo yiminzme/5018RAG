@@ -1,3 +1,7 @@
+# 5018 RAG
+
+The folder job contains the slurm jobs to run the experiments conducted for 5018 group project on HKUST SuperPod
+
 # The Power of Noise: Redefining Retrieval for RAG Systems
 
 This repository contains the code and data to reproduce the experiments from the paper [The Power of Noise: Redefining Retrieval for RAG Systems](https://dl.acm.org/doi/10.1145/3626772.3657834).
